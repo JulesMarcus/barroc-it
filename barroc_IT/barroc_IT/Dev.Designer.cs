@@ -108,8 +108,9 @@
             this.btn_edit_Infotab_Dev.Name = "btn_edit_Infotab_Dev";
             this.btn_edit_Infotab_Dev.Size = new System.Drawing.Size(75, 23);
             this.btn_edit_Infotab_Dev.TabIndex = 2;
-            this.btn_edit_Infotab_Dev.Text = "edit";
+            this.btn_edit_Infotab_Dev.Text = "Edit";
             this.btn_edit_Infotab_Dev.UseVisualStyleBackColor = true;
+            this.btn_edit_Infotab_Dev.Click += new System.EventHandler(this.btn_edit_Infotab_Dev_Click);
             // 
             // dg_infotab_Dev2
             // 
@@ -122,6 +123,7 @@
             // 
             // dg_Infotab_Dev1
             // 
+            this.dg_Infotab_Dev1.AllowUserToOrderColumns = true;
             this.dg_Infotab_Dev1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Infotab_Dev1.Location = new System.Drawing.Point(6, 33);
             this.dg_Infotab_Dev1.Name = "dg_Infotab_Dev1";
