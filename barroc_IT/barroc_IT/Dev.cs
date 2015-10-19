@@ -15,6 +15,13 @@ namespace barroc_IT
         public Dev()
         {
             InitializeComponent();
+            DatabaseHandler db = new DatabaseHandler();
+            dg_Infotab_Dev1.DataSource = db.QueryEx("SELECT * FROM tbl_customers;");
+        }
+
+        private void Dev_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

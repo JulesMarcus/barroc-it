@@ -16,7 +16,7 @@ namespace barroc_IT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new finance());
+            Application.Run(new Login());
         }
     }
 }

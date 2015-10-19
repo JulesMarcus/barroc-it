@@ -317,7 +317,7 @@
             this.Controls.Add(this.tab_Control_Dev);
             this.Name = "Dev";
             this.Text = "Dev";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Dev_Load);
             this.tab_Control_Dev.ResumeLayout(false);
             this.info_tab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_infotab_Dev2)).EndInit();

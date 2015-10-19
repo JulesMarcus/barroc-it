@@ -71,6 +71,7 @@
     <Compile Include="client_list_Sales.Designer.cs">
       <DependentUpon>client_list_Sales.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="Dev.cs">
       <SubType>Form</SubType>
     </Compile>

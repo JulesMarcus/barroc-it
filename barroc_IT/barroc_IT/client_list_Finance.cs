@@ -16,5 +16,12 @@ namespace barroc_IT
         {
             InitializeComponent();
         }
+
+        private void btn_Add_Client_Clientlist_Dev_Click(object sender, EventArgs e)
+        {
+            finance Fin = new finance();
+            this.Hide();
+            Fin.Show();
+        }
     }
 }

@@ -71,6 +71,7 @@
             this.btn_Add_Client_Clientlist_Sales.TabIndex = 12;
             this.btn_Add_Client_Clientlist_Sales.Text = "Add Client";
             this.btn_Add_Client_Clientlist_Sales.UseVisualStyleBackColor = true;
+            this.btn_Add_Client_Clientlist_Sales.Click += new System.EventHandler(this.btn_Add_Client_Clientlist_Sales_Click);
             // 
             // client_list_Sales
             // 

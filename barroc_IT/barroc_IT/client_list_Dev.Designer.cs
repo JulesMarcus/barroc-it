@@ -62,6 +62,7 @@
             this.btn_Add_Client_Clientlist_Dev.TabIndex = 11;
             this.btn_Add_Client_Clientlist_Dev.Text = "Add Client";
             this.btn_Add_Client_Clientlist_Dev.UseVisualStyleBackColor = true;
+            this.btn_Add_Client_Clientlist_Dev.Click += new System.EventHandler(this.btn_Add_Client_Clientlist_Dev_Click);
             // 
             // dg_Client_list_Dev2
             // 
