@@ -123,6 +123,8 @@
             // 
             // dg_Infotab_Dev1
             // 
+            this.dg_Infotab_Dev1.AllowUserToAddRows = false;
+            this.dg_Infotab_Dev1.AllowUserToDeleteRows = false;
             this.dg_Infotab_Dev1.AllowUserToOrderColumns = true;
             this.dg_Infotab_Dev1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Infotab_Dev1.Location = new System.Drawing.Point(6, 33);
@@ -175,6 +177,8 @@
             // 
             // dg_ProjectsTab_Dev1
             // 
+            this.dg_ProjectsTab_Dev1.AllowUserToAddRows = false;
+            this.dg_ProjectsTab_Dev1.AllowUserToDeleteRows = false;
             this.dg_ProjectsTab_Dev1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_ProjectsTab_Dev1.Location = new System.Drawing.Point(6, 37);
             this.dg_ProjectsTab_Dev1.Name = "dg_ProjectsTab_Dev1";
@@ -344,7 +348,6 @@
         private System.Windows.Forms.Button btn_Logout_InfoTab_Dev;
         private System.Windows.Forms.Button btn_edit_Infotab_Dev;
         private System.Windows.Forms.DataGridView dg_infotab_Dev2;
-        private System.Windows.Forms.DataGridView dg_Infotab_Dev1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btn_Logout_AppointmentTab_Dev;
         private System.Windows.Forms.DataGridView dg_ProjectsTab_Dev2;
@@ -363,5 +366,6 @@
         private System.Windows.Forms.DataGridView dg_InvoicesTab_Dev1;
         private System.Windows.Forms.Button btn_Edit_InvoiceTab_Dev;
         private System.Windows.Forms.Button btn_Add_Invoice_Dev;
+        private System.Windows.Forms.DataGridView dg_Infotab_Dev1;
     }
 }

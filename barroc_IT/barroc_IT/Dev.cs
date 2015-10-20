@@ -15,19 +15,23 @@ namespace barroc_IT
         public Dev()
         {
             InitializeComponent();
-            DatabaseHandler db = new DatabaseHandler();
-           
-            dg_Infotab_Dev1.DataSource = db.QueryEx("SELECT * FROM tbl_customers;");
-            dg_ProjectsTab_Dev1.DataSource = db.QueryEx("SELECT * FROM tbl_projects;");
-            dg_InvoicesTab_Dev1.DataSource = db.QueryEx("SELECT * FROM tbl_invoices;");
-            dg_AppointmentsTab_Dev1.DataSource = db.QueryEx("SELECT * FROM tbl_appointments;");
         }
 
         private void Dev_Load(object sender, EventArgs e)
         {
+            DatabaseHandler db = new DatabaseHandler();
+        
+            dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers;");
+            dg_ProjectsTab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_projects");
+            dg_AppointmentsTab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_appointments");
+            dg_InvoicesTab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_invoices;");
+            dg_infotab_Dev2.DataSource = db.GetDataView("SELECT * FROM tbl_customers;");           
+            dg_ProjectsTab_Dev2.DataSource = db.GetDataView("SELECT * FROM tbl_projects");
+            dg_AppointmentsTab_Dev2.DataSource = db.GetDataView("SELECT * FROM tbl_appointments");
+            dg_InvoicesTab_Dev2.DataSource = db.GetDataView("SELECT * FROM tbl_invoices;");
 
         }
-
+        
         private void btn_edit_Infotab_Dev_Click(object sender, EventArgs e)
         {
             DatabaseHandler db = new DatabaseHandler();
@@ -37,19 +41,17 @@ namespace barroc_IT
                     btn_edit_Infotab_Dev.Text = "Save";
                     dg_Infotab_Dev1.ForeColor = Color.Gray;
                     dg_Infotab_Dev1.Enabled = false;
-                    dg_infotab_Dev2.DataSource = db.QueryEx("SELECT * FROM tbl_customers;");
+                    dg_infotab_Dev2.DataSource = db.GetDataView("SELECT * FROM tbl_customers;");
                     dg_infotab_Dev2.Show();
+                    
                 }
                 else
                 {
+                    db.Update("SELECT * FROM tbl_customers;", "tbl_customers");
                     btn_edit_Infotab_Dev.Text = "Edit";
                     dg_Infotab_Dev1.Enabled = true;
                     dg_infotab_Dev2.Hide();
                 }
-         
-            
         }
-
-        
     }
 }
