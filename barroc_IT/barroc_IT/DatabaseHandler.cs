@@ -18,6 +18,64 @@ namespace barroc_IT
         {
             _conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Dimitri\Documents\GitHub\Barroc-IT\barroc_IT\barroc_IT\Database1.mdf;Integrated Security=True");
         }
+
+        public void TestConnection()
+        {
+            bool open = false;
+
+            try
+            {
+                _conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (_conn.State == ConnectionState.Open)
+                {
+                    open = true;
+                }
+                _conn.Close();
+            }
+
+            if (!open)
+            {
+                Application.Exit();
+            }
+        }
+
+        public void OpenConnectionDB()
+        {
+            _conn.Open();
+        }
+
+        public void CloseConnectionDB()
+        {
+            _conn.Close();
+        }
+
+        public DataTable FillDT(string query)
+        {
+            TestConnection();
+            OpenConnectionDB();
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, GetCon());
+            DataTable dT = new DataTable();
+            dataAdapter.Fill(dT);
+
+            CloseConnectionDB();
+
+            return dT;
+        }
+
+        public SqlConnection GetCon()
+        {
+            return _conn;
+        }
+
+
         public void Query(string sqlQuery)
         {
             _comm = new SqlCommand(sqlQuery, _conn);

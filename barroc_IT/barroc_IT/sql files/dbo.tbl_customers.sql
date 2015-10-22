@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[tbl_customers] (
+    [customer_ID]       INT           NOT NULL IDENTITY(0,1),
+    [company_Name]      NUMERIC (18)  NOT NULL,
+    [address1]          NVARCHAR (50) NOT NULL,
+    [zipcode1]          NVARCHAR (50) NOT NULL,
+    [city1]             NVARCHAR (50) NOT NULL,
+    [address2]          NVARCHAR (50) NULL,
+    [zipcode2]          NVARCHAR (50) NULL,
+    [city2]             NVARCHAR (50) NULL,
+    [contact_Person]    NVARCHAR (50) NOT NULL,
+    [intials]           NVARCHAR (50) NOT NULL,
+    [phone_Num1]        NVARCHAR (50) NOT NULL,
+    [phone_Num2]        NVARCHAR (50) NULL,
+    [fax_Num]           NVARCHAR (50) NOT NULL,
+    [email]             NVARCHAR (50) NOT NULL,
+    [creditor]          NVARCHAR (50) NOT NULL,
+    [bank_acc_Num]      NVARCHAR (50) NOT NULL,
+    [credit_Balance]    NVARCHAR (50) NOT NULL,
+    [num_of_Invoices]   NVARCHAR (50) NOT NULL,
+    [gross_Revenue]     INT           NOT NULL,
+    [ledger_acc_Num]    NVARCHAR (50) NOT NULL,
+    [tax_Code]          NVARCHAR (50) NOT NULL,
+    [potential_Client]  BIT           NOT NULL,
+    [last_contact_Date] DATE          NOT NULL,
+    PRIMARY KEY CLUSTERED ([customer_ID] ASC)
+);
+
