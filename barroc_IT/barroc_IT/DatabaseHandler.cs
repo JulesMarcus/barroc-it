@@ -1,5 +1,4 @@
-﻿
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
 using System.Data.Sql;
 using System.Windows.Forms;
@@ -17,7 +16,7 @@ namespace barroc_IT
 
         public DatabaseHandler()
         {
-            _conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\J. Marcus\Documents\GitHub\barroc-it\barroc_IT\barroc_IT\Database1.mdf;Integrated Security=True");
+            _conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Dimitri\Documents\GitHub\Barroc-IT\barroc_IT\barroc_IT\Database1.mdf;Integrated Security=True");
         }
         public void Query(string sqlQuery)
         {
@@ -35,6 +34,7 @@ namespace barroc_IT
             _conn.Close();
             return _dt;
         }
+
         public void Update(string query, string table)
         {
             _da = new SqlDataAdapter(query, _conn);
@@ -42,7 +42,6 @@ namespace barroc_IT
             SqlCommandBuilder cmd = new SqlCommandBuilder(_da);
             _da.Update(x, table);
         }
-        
 
         //Method to flip the dataset
         public DataSet FlipDataSet(DataSet my_DataSet)
