@@ -19,7 +19,7 @@ namespace barroc_IT
             InitializeComponent();
             dbh = new DatabaseHandler();
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btn_Login_Click(object sender, EventArgs e)
         {
             dbh.TestConnection();
             dbh.OpenConnectionDB();
@@ -27,6 +27,7 @@ namespace barroc_IT
             bool exist = false;
             string username = txt_Username.Text;
             string password = txt_Password.Text;
+            int department;
 
             txt_Username.Text = "";
             txt_Password.Text = "";
@@ -47,24 +48,38 @@ namespace barroc_IT
             {
                 MessageBox.Show("Login succesful");
 
-                client_list_Dev cl_Dev = new client_list_Dev();
-                client_list_Finance cl_Fin = new client_list_Finance();
-                client_list_Sales cl_Sal = new client_list_Sales();
+                dbh.OpenConnectionDB();
+                using (SqlCommand qry = new SqlCommand(@"
+                    SELECT department FROM [tbl_users] 
+                    WHERE username = @Username 
+                    AND password = @Password", dbh.GetCon()))
+                {
+                    qry.Parameters.AddWithValue("Username", username);
+                    qry.Parameters.AddWithValue("Password", password);
+                    string res = qry.ExecuteScalar().ToString();
+                    department = int.Parse(res);
+                };
 
-                if (txt_Username.Text == "dev")
+                switch (department)
                 {
-                    this.Hide();
-                    cl_Dev.Show();
-                }
-                else if (txt_Username.Text == "sal")
-                {
-                    this.Hide();
-                    cl_Sal.Show();
-                }
-                else if (txt_Username.Text == "fin")
-                {
-                    this.Hide();
-                    cl_Fin.Show();
+                    case 0:
+                        client_list_Dev cl_Dev = new client_list_Dev();
+                        this.Hide();
+                        cl_Dev.Show();
+                        break;
+                    case 1:
+                        client_list_Sales cl_Sal = new client_list_Sales();
+                        this.Hide();
+                        cl_Sal.Show();
+                        break;
+                    case 2:
+                        client_list_Finance cl_Fin = new client_list_Finance();
+                        this.Hide();
+                        cl_Fin.Show();
+                        break;
+                    default:
+                        MessageBox.Show("No department set. (" + department + ")");
+                        break;
                 }
             }
             else
@@ -72,14 +87,6 @@ namespace barroc_IT
                 dbh.CloseConnectionDB();
                 MessageBox.Show("Wrong username and/or password.");
             }
-        }
-        
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

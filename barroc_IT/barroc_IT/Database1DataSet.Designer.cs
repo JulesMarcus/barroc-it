@@ -2120,6 +2120,8 @@ namespace barroc_IT {
             
             private global::System.Data.DataColumn columnpassword;
             
+            private global::System.Data.DataColumn columndepartment;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbl_usersDataTable() {
@@ -2179,6 +2181,14 @@ namespace barroc_IT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn departmentColumn {
+                get {
+                    return this.columndepartment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2214,12 +2224,13 @@ namespace barroc_IT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_usersRow Addtbl_usersRow(int user_ID, string username, string password) {
+            public tbl_usersRow Addtbl_usersRow(int user_ID, string username, string password, string department) {
                 tbl_usersRow rowtbl_usersRow = ((tbl_usersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         user_ID,
                         username,
-                        password};
+                        password,
+                        department};
                 rowtbl_usersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_usersRow);
                 return rowtbl_usersRow;
@@ -2252,6 +2263,7 @@ namespace barroc_IT {
                 this.columnuser_ID = base.Columns["user_ID"];
                 this.columnusername = base.Columns["username"];
                 this.columnpassword = base.Columns["password"];
+                this.columndepartment = base.Columns["department"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2263,6 +2275,8 @@ namespace barroc_IT {
                 base.Columns.Add(this.columnusername);
                 this.columnpassword = new global::System.Data.DataColumn("password", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpassword);
+                this.columndepartment = new global::System.Data.DataColumn("department", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndepartment);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnuser_ID}, true));
                 this.columnuser_ID.AllowDBNull = false;
@@ -3109,6 +3123,34 @@ namespace barroc_IT {
                 set {
                     this[this.tabletbl_users.passwordColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string department {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_users.departmentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'department\' in table \'tbl_users\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_users.departmentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsdepartmentNull() {
+                return this.IsNull(this.tabletbl_users.departmentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetdepartmentNull() {
+                this[this.tabletbl_users.departmentColumn] = global::System.Convert.DBNull;
             }
         }
         

@@ -443,7 +443,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
   <xs:element name="Database1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database1DataSet" msprop:Generator_UserDSName="Database1DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_invoices" msprop:Generator_TableClassName="tbl_invoicesDataTable" msprop:Generator_TableVarName="tabletbl_invoices" msprop:Generator_TablePropName="tbl_invoices" msprop:Generator_RowDeletingName="tbl_invoicesRowDeleting" msprop:Generator_RowChangingName="tbl_invoicesRowChanging" msprop:Generator_RowEvHandlerName="tbl_invoicesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_invoicesRowDeleted" msprop:Generator_UserTableName="tbl_invoices" msprop:Generator_RowChangedName="tbl_invoicesRowChanged" msprop:Generator_RowEvArgName="tbl_invoicesRowChangeEvent" msprop:Generator_RowClassName="tbl_invoicesRow">
+        <xs:element name="tbl_invoices" msprop:Generator_TableClassName="tbl_invoicesDataTable" msprop:Generator_TableVarName="tabletbl_invoices" msprop:Generator_RowChangedName="tbl_invoicesRowChanged" msprop:Generator_TablePropName="tbl_invoices" msprop:Generator_RowDeletingName="tbl_invoicesRowDeleting" msprop:Generator_RowChangingName="tbl_invoicesRowChanging" msprop:Generator_RowEvHandlerName="tbl_invoicesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_invoicesRowDeleted" msprop:Generator_RowClassName="tbl_invoicesRow" msprop:Generator_UserTableName="tbl_invoices" msprop:Generator_RowEvArgName="tbl_invoicesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="invoice_ID" msprop:Generator_ColumnVarNameInTable="columninvoice_ID" msprop:Generator_ColumnPropNameInRow="invoice_ID" msprop:Generator_ColumnPropNameInTable="invoice_IDColumn" msprop:Generator_UserColumnName="invoice_ID" type="xs:int" />
@@ -486,7 +486,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_customers" msprop:Generator_TableClassName="tbl_customersDataTable" msprop:Generator_TableVarName="tabletbl_customers" msprop:Generator_TablePropName="tbl_customers" msprop:Generator_RowDeletingName="tbl_customersRowDeleting" msprop:Generator_RowChangingName="tbl_customersRowChanging" msprop:Generator_RowEvHandlerName="tbl_customersRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_customersRowDeleted" msprop:Generator_UserTableName="tbl_customers" msprop:Generator_RowChangedName="tbl_customersRowChanged" msprop:Generator_RowEvArgName="tbl_customersRowChangeEvent" msprop:Generator_RowClassName="tbl_customersRow">
+        <xs:element name="tbl_customers" msprop:Generator_TableClassName="tbl_customersDataTable" msprop:Generator_TableVarName="tabletbl_customers" msprop:Generator_RowChangedName="tbl_customersRowChanged" msprop:Generator_TablePropName="tbl_customers" msprop:Generator_RowDeletingName="tbl_customersRowDeleting" msprop:Generator_RowChangingName="tbl_customersRowChanging" msprop:Generator_RowEvHandlerName="tbl_customersRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_customersRowDeleted" msprop:Generator_RowClassName="tbl_customersRow" msprop:Generator_UserTableName="tbl_customers" msprop:Generator_RowEvArgName="tbl_customersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="customer_ID" msprop:Generator_ColumnVarNameInTable="columncustomer_ID" msprop:Generator_ColumnPropNameInRow="customer_ID" msprop:Generator_ColumnPropNameInTable="customer_IDColumn" msprop:Generator_UserColumnName="customer_ID" type="xs:int" />
@@ -623,7 +623,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_appointments" msprop:Generator_TableClassName="tbl_appointmentsDataTable" msprop:Generator_TableVarName="tabletbl_appointments" msprop:Generator_TablePropName="tbl_appointments" msprop:Generator_RowDeletingName="tbl_appointmentsRowDeleting" msprop:Generator_RowChangingName="tbl_appointmentsRowChanging" msprop:Generator_RowEvHandlerName="tbl_appointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_appointmentsRowDeleted" msprop:Generator_UserTableName="tbl_appointments" msprop:Generator_RowChangedName="tbl_appointmentsRowChanged" msprop:Generator_RowEvArgName="tbl_appointmentsRowChangeEvent" msprop:Generator_RowClassName="tbl_appointmentsRow">
+        <xs:element name="tbl_appointments" msprop:Generator_TableClassName="tbl_appointmentsDataTable" msprop:Generator_TableVarName="tabletbl_appointments" msprop:Generator_RowChangedName="tbl_appointmentsRowChanged" msprop:Generator_TablePropName="tbl_appointments" msprop:Generator_RowDeletingName="tbl_appointmentsRowDeleting" msprop:Generator_RowChangingName="tbl_appointmentsRowChanging" msprop:Generator_RowEvHandlerName="tbl_appointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_appointmentsRowDeleted" msprop:Generator_RowClassName="tbl_appointmentsRow" msprop:Generator_UserTableName="tbl_appointments" msprop:Generator_RowEvArgName="tbl_appointmentsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="appointment_ID" msprop:Generator_ColumnVarNameInTable="columnappointment_ID" msprop:Generator_ColumnPropNameInRow="appointment_ID" msprop:Generator_ColumnPropNameInTable="appointment_IDColumn" msprop:Generator_UserColumnName="appointment_ID" type="xs:int" />
@@ -646,7 +646,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_projects" msprop:Generator_TableClassName="tbl_projectsDataTable" msprop:Generator_TableVarName="tabletbl_projects" msprop:Generator_TablePropName="tbl_projects" msprop:Generator_RowDeletingName="tbl_projectsRowDeleting" msprop:Generator_RowChangingName="tbl_projectsRowChanging" msprop:Generator_RowEvHandlerName="tbl_projectsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_projectsRowDeleted" msprop:Generator_UserTableName="tbl_projects" msprop:Generator_RowChangedName="tbl_projectsRowChanged" msprop:Generator_RowEvArgName="tbl_projectsRowChangeEvent" msprop:Generator_RowClassName="tbl_projectsRow">
+        <xs:element name="tbl_projects" msprop:Generator_TableClassName="tbl_projectsDataTable" msprop:Generator_TableVarName="tabletbl_projects" msprop:Generator_RowChangedName="tbl_projectsRowChanged" msprop:Generator_TablePropName="tbl_projects" msprop:Generator_RowDeletingName="tbl_projectsRowDeleting" msprop:Generator_RowChangingName="tbl_projectsRowChanging" msprop:Generator_RowEvHandlerName="tbl_projectsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_projectsRowDeleted" msprop:Generator_RowClassName="tbl_projectsRow" msprop:Generator_UserTableName="tbl_projects" msprop:Generator_RowEvArgName="tbl_projectsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="project_ID" msprop:Generator_ColumnVarNameInTable="columnproject_ID" msprop:Generator_ColumnPropNameInRow="project_ID" msprop:Generator_ColumnPropNameInTable="project_IDColumn" msprop:Generator_UserColumnName="project_ID" type="xs:int" />
@@ -684,7 +684,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_users" msprop:Generator_TableClassName="tbl_usersDataTable" msprop:Generator_TableVarName="tabletbl_users" msprop:Generator_TablePropName="tbl_users" msprop:Generator_RowDeletingName="tbl_usersRowDeleting" msprop:Generator_RowChangingName="tbl_usersRowChanging" msprop:Generator_RowEvHandlerName="tbl_usersRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_usersRowDeleted" msprop:Generator_UserTableName="tbl_users" msprop:Generator_RowChangedName="tbl_usersRowChanged" msprop:Generator_RowEvArgName="tbl_usersRowChangeEvent" msprop:Generator_RowClassName="tbl_usersRow">
+        <xs:element name="tbl_users" msprop:Generator_TableClassName="tbl_usersDataTable" msprop:Generator_TableVarName="tabletbl_users" msprop:Generator_RowChangedName="tbl_usersRowChanged" msprop:Generator_TablePropName="tbl_users" msprop:Generator_RowDeletingName="tbl_usersRowDeleting" msprop:Generator_RowChangingName="tbl_usersRowChanging" msprop:Generator_RowEvHandlerName="tbl_usersRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_usersRowDeleted" msprop:Generator_RowClassName="tbl_usersRow" msprop:Generator_UserTableName="tbl_users" msprop:Generator_RowEvArgName="tbl_usersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_ID" msprop:Generator_ColumnVarNameInTable="columnuser_ID" msprop:Generator_ColumnPropNameInRow="user_ID" msprop:Generator_ColumnPropNameInTable="user_IDColumn" msprop:Generator_UserColumnName="user_ID" type="xs:int" />
@@ -702,6 +702,7 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="department" msprop:Generator_ColumnVarNameInTable="columndepartment" msprop:Generator_ColumnPropNameInRow="department" msprop:Generator_ColumnPropNameInTable="departmentColumn" msprop:Generator_UserColumnName="department" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -730,9 +731,9 @@ SELECT user_ID, username, password FROM tbl_users WHERE (user_ID = @user_ID)</Co
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_invoices" msdata:parent="tbl_projects" msdata:child="tbl_invoices" msdata:parentkey="project_ID" msdata:childkey="invoice_ID" msprop:Generator_UserChildTable="tbl_invoices" msprop:Generator_ChildPropName="Gettbl_invoicesRows" msprop:Generator_UserRelationName="FK_invoices" msprop:Generator_RelationVarName="relationFK_invoices" msprop:Generator_UserParentTable="tbl_projects" msprop:Generator_ParentPropName="tbl_projectsRow" />
-      <msdata:Relationship name="fk_appointment" msdata:parent="tbl_projects" msdata:child="tbl_appointments" msdata:parentkey="project_ID" msdata:childkey="appointment_ID" msprop:Generator_UserChildTable="tbl_appointments" msprop:Generator_ChildPropName="Gettbl_appointmentsRows" msprop:Generator_UserRelationName="fk_appointment" msprop:Generator_RelationVarName="relationfk_appointment" msprop:Generator_UserParentTable="tbl_projects" msprop:Generator_ParentPropName="tbl_projectsRow" />
-      <msdata:Relationship name="fk_tbl_projects" msdata:parent="tbl_customers" msdata:child="tbl_projects" msdata:parentkey="customer_ID" msdata:childkey="project_ID" msprop:Generator_UserChildTable="tbl_projects" msprop:Generator_ChildPropName="Gettbl_projectsRows" msprop:Generator_UserRelationName="fk_tbl_projects" msprop:Generator_ParentPropName="tbl_customersRow" msprop:Generator_RelationVarName="relationfk_tbl_projects" msprop:Generator_UserParentTable="tbl_customers" />
+      <msdata:Relationship name="FK_invoices" msdata:parent="tbl_projects" msdata:child="tbl_invoices" msdata:parentkey="project_ID" msdata:childkey="invoice_ID" msprop:Generator_UserChildTable="tbl_invoices" msprop:Generator_ChildPropName="Gettbl_invoicesRows" msprop:Generator_UserRelationName="FK_invoices" msprop:Generator_ParentPropName="tbl_projectsRow" msprop:Generator_RelationVarName="relationFK_invoices" msprop:Generator_UserParentTable="tbl_projects" />
+      <msdata:Relationship name="fk_appointment" msdata:parent="tbl_projects" msdata:child="tbl_appointments" msdata:parentkey="project_ID" msdata:childkey="appointment_ID" msprop:Generator_UserChildTable="tbl_appointments" msprop:Generator_ChildPropName="Gettbl_appointmentsRows" msprop:Generator_UserRelationName="fk_appointment" msprop:Generator_ParentPropName="tbl_projectsRow" msprop:Generator_RelationVarName="relationfk_appointment" msprop:Generator_UserParentTable="tbl_projects" />
+      <msdata:Relationship name="fk_tbl_projects" msdata:parent="tbl_customers" msdata:child="tbl_projects" msdata:parentkey="customer_ID" msdata:childkey="project_ID" msprop:Generator_UserChildTable="tbl_projects" msprop:Generator_ChildPropName="Gettbl_projectsRows" msprop:Generator_UserRelationName="fk_tbl_projects" msprop:Generator_RelationVarName="relationfk_tbl_projects" msprop:Generator_UserParentTable="tbl_customers" msprop:Generator_ParentPropName="tbl_customersRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
