@@ -15,17 +15,16 @@ namespace barroc_IT
         public client_list_Dev()
         {
             InitializeComponent();
-            DatabaseHandler db = new DatabaseHandler();
-            dg_Client_list_Dev1.DataSource = db.GetDataView("SELECT company_Name FROM tbl_customers");
+            DatabaseHandler dbDev = new DatabaseHandler();
+            dg_Client_list_Dev1.DataSource = dbDev.GetDataView(DataDict.TBL10, DataDict.FLD12);
         }
 
         private void btn_Add_Client_Clientlist_Dev_Click(object sender, EventArgs e)
         {
-            DatabaseHandler db = new DatabaseHandler();
+            DatabaseHandler dbDev = new DatabaseHandler();
             Dev dev = new Dev();
             this.Hide();
             dev.Show();
-           
         }
     }
 }

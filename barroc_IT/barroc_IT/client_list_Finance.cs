@@ -16,21 +16,15 @@ namespace barroc_IT
         public client_list_Finance()
         {
             InitializeComponent();
+            DatabaseHandler dbFin = new DatabaseHandler();
+            dg_Client_list_Finance1.DataSource = dbFin.GetDataView(DataDict.TBL10, DataDict.FLD12);
         }
 
         private void btn_Add_Client_Clientlist_Dev_Click(object sender, EventArgs e)
         {
-            finance Fin = new finance();
+            finance fin = new finance();
             this.Hide();
-            Fin.Show();
-
-        }
-
-        private void client_list_Finance_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'database1DataSet.tbl_customers' table. You can move, or remove it, as needed.
-            this.tbl_customersTableAdapter.Fill(this.database1DataSet.tbl_customers);
-
+            fin.Show();
         }
     }
 }

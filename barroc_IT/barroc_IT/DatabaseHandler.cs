@@ -124,15 +124,18 @@ namespace barroc_IT
                 }
                 ds.Tables.Add(table);
             }
-
             return ds;
         }
         
         //Method to get the flipped dataview for the dataviewgrid
-        public DataView GetDataView(string query)
-        { 
+        public DataView GetDataView(string tbl, string col = " * ")//call method using table name and optional column name: GetDataView("tbl_name", "column_name")
+        {
+            string qry = "";
+            qry += "SELECT " + col;
+            qry += " FROM " + tbl;
+
             DataSet x = new DataSet();
-            x.Tables.Add(QueryEx(query));
+            x.Tables.Add(QueryEx(qry));
             DataSet new_x = FlipDataSet(x);
             DataView y = new_x.Tables[0].DefaultView;
             return y;

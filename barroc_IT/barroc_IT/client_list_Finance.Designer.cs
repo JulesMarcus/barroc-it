@@ -120,7 +120,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "client_list_Finance";
             this.Text = "Client list Finance";
-            this.Load += new System.EventHandler(this.client_list_Finance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Finance1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Finance2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
