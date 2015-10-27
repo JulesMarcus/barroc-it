@@ -47,12 +47,18 @@
             // 
             // dg_Client_list_Dev1
             // 
+            this.dg_Client_list_Dev1.AllowUserToAddRows = false;
+            this.dg_Client_list_Dev1.AllowUserToDeleteRows = false;
+            this.dg_Client_list_Dev1.AllowUserToResizeColumns = false;
+            this.dg_Client_list_Dev1.AllowUserToResizeRows = false;
             this.dg_Client_list_Dev1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_Client_list_Dev1.ColumnHeadersVisible = false;
             this.dg_Client_list_Dev1.Location = new System.Drawing.Point(17, 41);
             this.dg_Client_list_Dev1.Name = "dg_Client_list_Dev1";
             this.dg_Client_list_Dev1.RowTemplate.Height = 24;
             this.dg_Client_list_Dev1.Size = new System.Drawing.Size(478, 591);
             this.dg_Client_list_Dev1.TabIndex = 12;
+            this.dg_Client_list_Dev1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_Client_list_Dev1_CellClick);
             // 
             // btn_Add_Client_Clientlist_Dev
             // 

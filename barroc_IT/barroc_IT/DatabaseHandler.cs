@@ -4,7 +4,9 @@ using System.Data;
 using System.Data.Sql;
 using System.Windows.Forms;
 using System;
-using System.Collections;
+using System.Linq;
+using System.Collections.Generic;
+
 
 namespace barroc_IT
 {
@@ -35,14 +37,46 @@ namespace barroc_IT
             _conn.Close();
             return _dt;
         }
-        public void Update(string query, string table)
+        //insert command
+        public void insertCmd(string tableName, Dictionary<string, object> dic)
         {
-            _da = new SqlDataAdapter(query, _conn);
-            DataSet x = new DataSet(query);
-            SqlCommandBuilder cmd = new SqlCommandBuilder(_da);
-            _da.Update(x, table);
+            string keys = "";
+            string values = "";
+            for (int i = 0; i < dic.Count; i++)
+            {
+                keys += dic.Keys.ElementAt(i) + " ,";
+                values += "'" + dic.Values.ElementAt(i) + "' ,";
+            }
+            keys = keys.Remove(keys.Length - 1);
+           values = values.Remove(values.Length - 1);
+            SqlCommand cmd = new SqlCommand("INSERT INTO " +tableName+ " (" + keys + ") VALUES (" + values + ") " , _conn);
+            _conn.Open();
+            cmd.ExecuteNonQuery();
+            _conn.Close();
         }
-        
+        public void updateCmd(string tableName, Dictionary<string, object> dic)
+        {
+            string keys = "";
+            string values = "";
+            object outValue = (string)"";
+            dic.TryGetValue("company_Name",out outValue);
+            
+            for (int i = 0; i < dic.Count; i++)
+            {
+                keys += dic.Keys.ElementAt(i) + " ,";
+                values += "'" + dic.Values.ElementAt(i) + "' ,";
+            }
+            keys = keys.Remove(keys.Length - 1);
+            values = values.Remove(values.Length - 1);
+            
+            SqlCommand cmd_Delete = new SqlCommand("DELETE FROM " +tableName+ " WHERE company_Name = " +" '" +outValue+ "'", _conn);
+            SqlCommand cmd_Insert = new SqlCommand("INSERT INTO " + tableName + " (" + keys + ") VALUES (" + values + ") ", _conn);
+            _conn.Open();
+            cmd_Delete.ExecuteNonQuery();
+            cmd_Insert.ExecuteNonQuery();
+            _conn.Close();
+        }
+       
 
         //Method to flip the dataset
         public DataSet FlipDataSet(DataSet my_DataSet)
