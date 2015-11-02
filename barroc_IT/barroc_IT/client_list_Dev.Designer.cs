@@ -32,6 +32,7 @@
             this.dg_Client_list_Dev1 = new System.Windows.Forms.DataGridView();
             this.btn_Add_Client_Clientlist_Dev = new System.Windows.Forms.Button();
             this.dg_Client_list_Dev2 = new System.Windows.Forms.DataGridView();
+            this.backBtn_client_list_Dev = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Dev1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Dev2)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,12 @@
             // 
             // dg_Client_list_Dev1
             // 
+            this.dg_Client_list_Dev1.AllowUserToAddRows = false;
+            this.dg_Client_list_Dev1.AllowUserToDeleteRows = false;
+            this.dg_Client_list_Dev1.AllowUserToResizeColumns = false;
+            this.dg_Client_list_Dev1.AllowUserToResizeRows = false;
             this.dg_Client_list_Dev1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_Client_list_Dev1.ColumnHeadersVisible = false;
             this.dg_Client_list_Dev1.Location = new System.Drawing.Point(17, 41);
             this.dg_Client_list_Dev1.Name = "dg_Client_list_Dev1";
             this.dg_Client_list_Dev1.RowTemplate.Height = 24;
@@ -56,7 +62,7 @@
             // 
             // btn_Add_Client_Clientlist_Dev
             // 
-            this.btn_Add_Client_Clientlist_Dev.Location = new System.Drawing.Point(17, 8);
+            this.btn_Add_Client_Clientlist_Dev.Location = new System.Drawing.Point(387, 11);
             this.btn_Add_Client_Clientlist_Dev.Name = "btn_Add_Client_Clientlist_Dev";
             this.btn_Add_Client_Clientlist_Dev.Size = new System.Drawing.Size(108, 24);
             this.btn_Add_Client_Clientlist_Dev.TabIndex = 11;
@@ -73,11 +79,21 @@
             this.dg_Client_list_Dev2.Size = new System.Drawing.Size(478, 591);
             this.dg_Client_list_Dev2.TabIndex = 14;
             // 
+            // backBtn_client_list_Dev
+            // 
+            this.backBtn_client_list_Dev.Location = new System.Drawing.Point(17, 11);
+            this.backBtn_client_list_Dev.Name = "backBtn_client_list_Dev";
+            this.backBtn_client_list_Dev.Size = new System.Drawing.Size(75, 23);
+            this.backBtn_client_list_Dev.TabIndex = 15;
+            this.backBtn_client_list_Dev.Text = "Back";
+            this.backBtn_client_list_Dev.UseVisualStyleBackColor = true;
+            // 
             // client_list_Dev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 673);
+            this.Controls.Add(this.backBtn_client_list_Dev);
             this.Controls.Add(this.dg_Client_list_Dev2);
             this.Controls.Add(this.btn_Logout_Clientlist_Dev);
             this.Controls.Add(this.dg_Client_list_Dev1);
@@ -96,5 +112,6 @@
         private System.Windows.Forms.DataGridView dg_Client_list_Dev1;
         private System.Windows.Forms.Button btn_Add_Client_Clientlist_Dev;
         private System.Windows.Forms.DataGridView dg_Client_list_Dev2;
+        private System.Windows.Forms.Button backBtn_client_list_Dev;
     }
 }
