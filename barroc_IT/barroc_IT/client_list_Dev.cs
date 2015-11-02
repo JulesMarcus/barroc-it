@@ -35,8 +35,9 @@ namespace barroc_IT
         private void dg_Client_list_Dev1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Dev dev = new Dev();
-            string query = "SELECT * FROM tbl_customers WHERE company_Name = " + "'" +dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
-            dev.load_info_from_Cell(query);
+            string iQuery = "SELECT * FROM tbl_customers WHERE company_Name = " + "'" +dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
+            string pQuery = "SELECT * FROM tbl_projects FULL OUTER JOIN tbl_customers ON tbl_customers.company_Name=tbl_projects.project_ID;";
+            dev.load_info_from_Cell(iQuery, pQuery);
             dev.Show();
             this.Hide();
         }
@@ -55,6 +56,11 @@ namespace barroc_IT
             login.Show();
             this.Hide();
             this.Dispose();
+        }
+
+        private void client_list_Dev_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

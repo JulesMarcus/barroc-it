@@ -28,6 +28,10 @@ namespace barroc_IT
                 mirroredTextArray[i].Text = datagrid_Row_Text[i];
             }
         }
+        public void LoadProject()
+        { 
+        
+        }
 
         public void LoadProjects()
         { 

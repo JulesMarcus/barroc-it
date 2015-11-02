@@ -29,16 +29,16 @@ namespace barroc_IT
         {
              
         }
-        public void load_info_from_Cell(string query)
+        public void load_info_from_Cell(string iQuery, string pQuery)
         {
-            dg_Infotab_Dev1.DataSource = db.GetDataView(query);
+            dg_Infotab_Dev1.DataSource = db.GetDataView(iQuery);
+            dg_ProjectsTab_Dev1.DataSource = db.GetDataView(pQuery);
             btn_edit_Infotab_Dev.Text = "Edit";
         }
         public void load_info_Add()
         {
             btn_edit_Infotab_Dev.Text = "Save";
             dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE 1=2");
-            
         }
         private void load_edittable_Info()
         {

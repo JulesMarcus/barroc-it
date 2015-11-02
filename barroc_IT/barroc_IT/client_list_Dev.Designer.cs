@@ -103,6 +103,7 @@
             this.Controls.Add(this.btn_Add_Client_Clientlist_Dev);
             this.Name = "client_list_Dev";
             this.Text = "client_list_Dev";
+            this.Load += new System.EventHandler(this.client_list_Dev_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Dev1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Dev2)).EndInit();
             this.ResumeLayout(false);
