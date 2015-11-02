@@ -87,10 +87,11 @@
             this.tab_Control_Finance.Controls.Add(this.tabPage2);
             this.tab_Control_Finance.Controls.Add(this.tabPage1);
             this.tab_Control_Finance.Controls.Add(this.tabPage3);
-            this.tab_Control_Finance.Location = new System.Drawing.Point(13, 4);
+            this.tab_Control_Finance.Location = new System.Drawing.Point(10, 3);
+            this.tab_Control_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab_Control_Finance.Name = "tab_Control_Finance";
             this.tab_Control_Finance.SelectedIndex = 0;
-            this.tab_Control_Finance.Size = new System.Drawing.Size(981, 657);
+            this.tab_Control_Finance.Size = new System.Drawing.Size(736, 534);
             this.tab_Control_Finance.TabIndex = 0;
             // 
             // info_tab
@@ -99,10 +100,11 @@
             this.info_tab.Controls.Add(this.btn_edit_Infotab_Finance);
             this.info_tab.Controls.Add(this.dg_InfoTab_Finance2);
             this.info_tab.Controls.Add(this.dg_InfoTab_Finance1);
-            this.info_tab.Location = new System.Drawing.Point(4, 25);
+            this.info_tab.Location = new System.Drawing.Point(4, 22);
+            this.info_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.info_tab.Name = "info_tab";
-            this.info_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.info_tab.Size = new System.Drawing.Size(973, 628);
+            this.info_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.info_tab.Size = new System.Drawing.Size(728, 508);
             this.info_tab.TabIndex = 0;
             this.info_tab.Text = "Information";
             this.info_tab.UseVisualStyleBackColor = true;
@@ -110,9 +112,10 @@
             // btn_Logout_InfoTab_Finance
             // 
             this.btn_Logout_InfoTab_Finance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Logout_InfoTab_Finance.Location = new System.Drawing.Point(807, 598);
+            this.btn_Logout_InfoTab_Finance.Location = new System.Drawing.Point(605, 486);
+            this.btn_Logout_InfoTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout_InfoTab_Finance.Name = "btn_Logout_InfoTab_Finance";
-            this.btn_Logout_InfoTab_Finance.Size = new System.Drawing.Size(160, 30);
+            this.btn_Logout_InfoTab_Finance.Size = new System.Drawing.Size(120, 24);
             this.btn_Logout_InfoTab_Finance.TabIndex = 9;
             this.btn_Logout_InfoTab_Finance.Text = "Log out";
             this.btn_Logout_InfoTab_Finance.UseVisualStyleBackColor = true;
@@ -120,9 +123,10 @@
             // btn_edit_Infotab_Finance
             // 
             this.btn_edit_Infotab_Finance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_edit_Infotab_Finance.Location = new System.Drawing.Point(409, 6);
+            this.btn_edit_Infotab_Finance.Location = new System.Drawing.Point(307, 5);
+            this.btn_edit_Infotab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_edit_Infotab_Finance.Name = "btn_edit_Infotab_Finance";
-            this.btn_edit_Infotab_Finance.Size = new System.Drawing.Size(75, 23);
+            this.btn_edit_Infotab_Finance.Size = new System.Drawing.Size(56, 19);
             this.btn_edit_Infotab_Finance.TabIndex = 2;
             this.btn_edit_Infotab_Finance.Text = "edit";
             this.btn_edit_Infotab_Finance.UseVisualStyleBackColor = true;
@@ -134,10 +138,11 @@
             this.dg_InfoTab_Finance2.AutoGenerateColumns = false;
             this.dg_InfoTab_Finance2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_InfoTab_Finance2.DataSource = this.database1DataSetBindingSource;
-            this.dg_InfoTab_Finance2.Location = new System.Drawing.Point(490, 33);
+            this.dg_InfoTab_Finance2.Location = new System.Drawing.Point(368, 27);
+            this.dg_InfoTab_Finance2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_InfoTab_Finance2.Name = "dg_InfoTab_Finance2";
             this.dg_InfoTab_Finance2.RowTemplate.Height = 24;
-            this.dg_InfoTab_Finance2.Size = new System.Drawing.Size(477, 562);
+            this.dg_InfoTab_Finance2.Size = new System.Drawing.Size(358, 457);
             this.dg_InfoTab_Finance2.TabIndex = 1;
             // 
             // database1DataSetBindingSource
@@ -157,10 +162,11 @@
             this.dg_InfoTab_Finance1.AutoGenerateColumns = false;
             this.dg_InfoTab_Finance1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_InfoTab_Finance1.DataSource = this.database1DataSetBindingSource;
-            this.dg_InfoTab_Finance1.Location = new System.Drawing.Point(6, 33);
+            this.dg_InfoTab_Finance1.Location = new System.Drawing.Point(4, 27);
+            this.dg_InfoTab_Finance1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_InfoTab_Finance1.Name = "dg_InfoTab_Finance1";
             this.dg_InfoTab_Finance1.RowTemplate.Height = 24;
-            this.dg_InfoTab_Finance1.Size = new System.Drawing.Size(478, 589);
+            this.dg_InfoTab_Finance1.Size = new System.Drawing.Size(358, 479);
             this.dg_InfoTab_Finance1.TabIndex = 0;
             // 
             // tabPage2
@@ -170,19 +176,21 @@
             this.tabPage2.Controls.Add(this.btn_Edit_ProjectTab_Finance);
             this.tabPage2.Controls.Add(this.dg_ProjectsTab_Finance1);
             this.tabPage2.Controls.Add(this.btn_Add_Project_Finance);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(973, 628);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(728, 508);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Projects";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btn_Logout_AppointmentTab_Finance
             // 
-            this.btn_Logout_AppointmentTab_Finance.Location = new System.Drawing.Point(806, 602);
+            this.btn_Logout_AppointmentTab_Finance.Location = new System.Drawing.Point(604, 489);
+            this.btn_Logout_AppointmentTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout_AppointmentTab_Finance.Name = "btn_Logout_AppointmentTab_Finance";
-            this.btn_Logout_AppointmentTab_Finance.Size = new System.Drawing.Size(160, 30);
+            this.btn_Logout_AppointmentTab_Finance.Size = new System.Drawing.Size(120, 24);
             this.btn_Logout_AppointmentTab_Finance.TabIndex = 8;
             this.btn_Logout_AppointmentTab_Finance.Text = "Log out";
             this.btn_Logout_AppointmentTab_Finance.UseVisualStyleBackColor = true;
@@ -192,10 +200,11 @@
             this.dg_ProjectsTab_Finance2.AutoGenerateColumns = false;
             this.dg_ProjectsTab_Finance2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_ProjectsTab_Finance2.DataSource = this.database1DataSetBindingSource3;
-            this.dg_ProjectsTab_Finance2.Location = new System.Drawing.Point(480, 37);
+            this.dg_ProjectsTab_Finance2.Location = new System.Drawing.Point(360, 30);
+            this.dg_ProjectsTab_Finance2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_ProjectsTab_Finance2.Name = "dg_ProjectsTab_Finance2";
             this.dg_ProjectsTab_Finance2.RowTemplate.Height = 24;
-            this.dg_ProjectsTab_Finance2.Size = new System.Drawing.Size(486, 562);
+            this.dg_ProjectsTab_Finance2.Size = new System.Drawing.Size(364, 457);
             this.dg_ProjectsTab_Finance2.TabIndex = 7;
             // 
             // database1DataSetBindingSource3
@@ -205,9 +214,10 @@
             // 
             // btn_Edit_ProjectTab_Finance
             // 
-            this.btn_Edit_ProjectTab_Finance.Location = new System.Drawing.Point(399, 6);
+            this.btn_Edit_ProjectTab_Finance.Location = new System.Drawing.Point(299, 5);
+            this.btn_Edit_ProjectTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Edit_ProjectTab_Finance.Name = "btn_Edit_ProjectTab_Finance";
-            this.btn_Edit_ProjectTab_Finance.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit_ProjectTab_Finance.Size = new System.Drawing.Size(56, 19);
             this.btn_Edit_ProjectTab_Finance.TabIndex = 6;
             this.btn_Edit_ProjectTab_Finance.Text = "edit";
             this.btn_Edit_ProjectTab_Finance.UseVisualStyleBackColor = true;
@@ -217,10 +227,11 @@
             this.dg_ProjectsTab_Finance1.AutoGenerateColumns = false;
             this.dg_ProjectsTab_Finance1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_ProjectsTab_Finance1.DataSource = this.database1DataSetBindingSource1;
-            this.dg_ProjectsTab_Finance1.Location = new System.Drawing.Point(6, 37);
+            this.dg_ProjectsTab_Finance1.Location = new System.Drawing.Point(4, 30);
+            this.dg_ProjectsTab_Finance1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_ProjectsTab_Finance1.Name = "dg_ProjectsTab_Finance1";
             this.dg_ProjectsTab_Finance1.RowTemplate.Height = 24;
-            this.dg_ProjectsTab_Finance1.Size = new System.Drawing.Size(468, 585);
+            this.dg_ProjectsTab_Finance1.Size = new System.Drawing.Size(351, 475);
             this.dg_ProjectsTab_Finance1.TabIndex = 5;
             // 
             // database1DataSetBindingSource1
@@ -230,9 +241,10 @@
             // 
             // btn_Add_Project_Finance
             // 
-            this.btn_Add_Project_Finance.Location = new System.Drawing.Point(6, 7);
+            this.btn_Add_Project_Finance.Location = new System.Drawing.Point(4, 6);
+            this.btn_Add_Project_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Add_Project_Finance.Name = "btn_Add_Project_Finance";
-            this.btn_Add_Project_Finance.Size = new System.Drawing.Size(111, 23);
+            this.btn_Add_Project_Finance.Size = new System.Drawing.Size(83, 19);
             this.btn_Add_Project_Finance.TabIndex = 4;
             this.btn_Add_Project_Finance.Text = "Add project";
             this.btn_Add_Project_Finance.UseVisualStyleBackColor = true;
@@ -244,28 +256,31 @@
             this.tabPage1.Controls.Add(this.dg_AppointmentsTab_Finance2);
             this.tabPage1.Controls.Add(this.add_Appointment_Finance);
             this.tabPage1.Controls.Add(this.dg_AppointmentsTab_Finance1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(973, 628);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(728, 508);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Appointments";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_logout_apointmentTab_Finance
             // 
-            this.btn_logout_apointmentTab_Finance.Location = new System.Drawing.Point(809, 598);
+            this.btn_logout_apointmentTab_Finance.Location = new System.Drawing.Point(607, 486);
+            this.btn_logout_apointmentTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_logout_apointmentTab_Finance.Name = "btn_logout_apointmentTab_Finance";
-            this.btn_logout_apointmentTab_Finance.Size = new System.Drawing.Size(160, 30);
+            this.btn_logout_apointmentTab_Finance.Size = new System.Drawing.Size(120, 24);
             this.btn_logout_apointmentTab_Finance.TabIndex = 4;
             this.btn_logout_apointmentTab_Finance.Text = "Log out";
             this.btn_logout_apointmentTab_Finance.UseVisualStyleBackColor = true;
             // 
             // btn_Edit_AppointmentsTab_Finance
             // 
-            this.btn_Edit_AppointmentsTab_Finance.Location = new System.Drawing.Point(410, 5);
+            this.btn_Edit_AppointmentsTab_Finance.Location = new System.Drawing.Point(308, 4);
+            this.btn_Edit_AppointmentsTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Edit_AppointmentsTab_Finance.Name = "btn_Edit_AppointmentsTab_Finance";
-            this.btn_Edit_AppointmentsTab_Finance.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit_AppointmentsTab_Finance.Size = new System.Drawing.Size(56, 19);
             this.btn_Edit_AppointmentsTab_Finance.TabIndex = 3;
             this.btn_Edit_AppointmentsTab_Finance.Text = "Edit";
             this.btn_Edit_AppointmentsTab_Finance.UseVisualStyleBackColor = true;
@@ -275,17 +290,19 @@
             this.dg_AppointmentsTab_Finance2.AutoGenerateColumns = false;
             this.dg_AppointmentsTab_Finance2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_AppointmentsTab_Finance2.DataSource = this.database1DataSetBindingSource;
-            this.dg_AppointmentsTab_Finance2.Location = new System.Drawing.Point(492, 34);
+            this.dg_AppointmentsTab_Finance2.Location = new System.Drawing.Point(369, 28);
+            this.dg_AppointmentsTab_Finance2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_AppointmentsTab_Finance2.Name = "dg_AppointmentsTab_Finance2";
             this.dg_AppointmentsTab_Finance2.RowTemplate.Height = 24;
-            this.dg_AppointmentsTab_Finance2.Size = new System.Drawing.Size(477, 562);
+            this.dg_AppointmentsTab_Finance2.Size = new System.Drawing.Size(358, 457);
             this.dg_AppointmentsTab_Finance2.TabIndex = 2;
             // 
             // add_Appointment_Finance
             // 
-            this.add_Appointment_Finance.Location = new System.Drawing.Point(7, 5);
+            this.add_Appointment_Finance.Location = new System.Drawing.Point(5, 4);
+            this.add_Appointment_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_Appointment_Finance.Name = "add_Appointment_Finance";
-            this.add_Appointment_Finance.Size = new System.Drawing.Size(132, 23);
+            this.add_Appointment_Finance.Size = new System.Drawing.Size(99, 19);
             this.add_Appointment_Finance.TabIndex = 1;
             this.add_Appointment_Finance.Text = "Add Appointment";
             this.add_Appointment_Finance.UseVisualStyleBackColor = true;
@@ -295,10 +312,11 @@
             this.dg_AppointmentsTab_Finance1.AutoGenerateColumns = false;
             this.dg_AppointmentsTab_Finance1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_AppointmentsTab_Finance1.DataSource = this.database1DataSetBindingSource;
-            this.dg_AppointmentsTab_Finance1.Location = new System.Drawing.Point(7, 34);
+            this.dg_AppointmentsTab_Finance1.Location = new System.Drawing.Point(5, 28);
+            this.dg_AppointmentsTab_Finance1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_AppointmentsTab_Finance1.Name = "dg_AppointmentsTab_Finance1";
             this.dg_AppointmentsTab_Finance1.RowTemplate.Height = 24;
-            this.dg_AppointmentsTab_Finance1.Size = new System.Drawing.Size(478, 588);
+            this.dg_AppointmentsTab_Finance1.Size = new System.Drawing.Size(358, 478);
             this.dg_AppointmentsTab_Finance1.TabIndex = 0;
             // 
             // tabPage3
@@ -308,19 +326,21 @@
             this.tabPage3.Controls.Add(this.dg_InvoicesTab_Finance1);
             this.tabPage3.Controls.Add(this.btn_Edit_InvoiceTab_Finance);
             this.tabPage3.Controls.Add(this.btn_Add_Invoice_Finance);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(973, 628);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(728, 508);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Invoices";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btn_Logout_InvoiceTab
             // 
-            this.btn_Logout_InvoiceTab.Location = new System.Drawing.Point(810, 598);
+            this.btn_Logout_InvoiceTab.Location = new System.Drawing.Point(608, 486);
+            this.btn_Logout_InvoiceTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout_InvoiceTab.Name = "btn_Logout_InvoiceTab";
-            this.btn_Logout_InvoiceTab.Size = new System.Drawing.Size(160, 30);
+            this.btn_Logout_InvoiceTab.Size = new System.Drawing.Size(120, 24);
             this.btn_Logout_InvoiceTab.TabIndex = 5;
             this.btn_Logout_InvoiceTab.Text = "Log out";
             this.btn_Logout_InvoiceTab.UseVisualStyleBackColor = true;
@@ -330,10 +350,11 @@
             this.dg_InvoicesTab_Finance2.AutoGenerateColumns = false;
             this.dg_InvoicesTab_Finance2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_InvoicesTab_Finance2.DataSource = this.database1DataSetBindingSource;
-            this.dg_InvoicesTab_Finance2.Location = new System.Drawing.Point(492, 36);
+            this.dg_InvoicesTab_Finance2.Location = new System.Drawing.Point(369, 29);
+            this.dg_InvoicesTab_Finance2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_InvoicesTab_Finance2.Name = "dg_InvoicesTab_Finance2";
             this.dg_InvoicesTab_Finance2.RowTemplate.Height = 24;
-            this.dg_InvoicesTab_Finance2.Size = new System.Drawing.Size(477, 562);
+            this.dg_InvoicesTab_Finance2.Size = new System.Drawing.Size(358, 457);
             this.dg_InvoicesTab_Finance2.TabIndex = 3;
             // 
             // dg_InvoicesTab_Finance1
@@ -341,26 +362,29 @@
             this.dg_InvoicesTab_Finance1.AutoGenerateColumns = false;
             this.dg_InvoicesTab_Finance1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_InvoicesTab_Finance1.DataSource = this.database1DataSetBindingSource;
-            this.dg_InvoicesTab_Finance1.Location = new System.Drawing.Point(7, 36);
+            this.dg_InvoicesTab_Finance1.Location = new System.Drawing.Point(5, 29);
+            this.dg_InvoicesTab_Finance1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_InvoicesTab_Finance1.Name = "dg_InvoicesTab_Finance1";
             this.dg_InvoicesTab_Finance1.RowTemplate.Height = 24;
-            this.dg_InvoicesTab_Finance1.Size = new System.Drawing.Size(478, 586);
+            this.dg_InvoicesTab_Finance1.Size = new System.Drawing.Size(358, 476);
             this.dg_InvoicesTab_Finance1.TabIndex = 2;
             // 
             // btn_Edit_InvoiceTab_Finance
             // 
-            this.btn_Edit_InvoiceTab_Finance.Location = new System.Drawing.Point(410, 6);
+            this.btn_Edit_InvoiceTab_Finance.Location = new System.Drawing.Point(308, 5);
+            this.btn_Edit_InvoiceTab_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Edit_InvoiceTab_Finance.Name = "btn_Edit_InvoiceTab_Finance";
-            this.btn_Edit_InvoiceTab_Finance.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit_InvoiceTab_Finance.Size = new System.Drawing.Size(56, 19);
             this.btn_Edit_InvoiceTab_Finance.TabIndex = 1;
             this.btn_Edit_InvoiceTab_Finance.Text = "Edit";
             this.btn_Edit_InvoiceTab_Finance.UseVisualStyleBackColor = true;
             // 
             // btn_Add_Invoice_Finance
             // 
-            this.btn_Add_Invoice_Finance.Location = new System.Drawing.Point(6, 6);
+            this.btn_Add_Invoice_Finance.Location = new System.Drawing.Point(4, 5);
+            this.btn_Add_Invoice_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Add_Invoice_Finance.Name = "btn_Add_Invoice_Finance";
-            this.btn_Add_Invoice_Finance.Size = new System.Drawing.Size(111, 23);
+            this.btn_Add_Invoice_Finance.Size = new System.Drawing.Size(83, 19);
             this.btn_Add_Invoice_Finance.TabIndex = 0;
             this.btn_Add_Invoice_Finance.Text = "Add Invoice";
             this.btn_Add_Invoice_Finance.UseVisualStyleBackColor = true;
@@ -372,12 +396,14 @@
             // 
             // finance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 673);
+            this.ClientSize = new System.Drawing.Size(754, 547);
             this.Controls.Add(this.tab_Control_Finance);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "finance";
             this.Text = "client_info";
+            this.Load += new System.EventHandler(this.finance_Load);
             this.tab_Control_Finance.ResumeLayout(false);
             this.info_tab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_InfoTab_Finance2)).EndInit();
