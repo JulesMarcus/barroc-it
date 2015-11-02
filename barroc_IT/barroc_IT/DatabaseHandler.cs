@@ -16,7 +16,7 @@ namespace barroc_IT
 
         public DatabaseHandler()
         {
-            _conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=%Barroc-IT%\barroc_IT\barroc_IT\Database1.mdf;Integrated Security=True");
+            _conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Dimitri\Documents\GitHub\Barroc-IT\barroc_IT\barroc_IT\Database1.mdf;Integrated Security=True");
         }
 
         public void TestConnection()
