@@ -14,6 +14,7 @@ namespace barroc_IT
     public partial class Dev : Form
     {
         DatabaseHandler db = new DatabaseHandler();
+        DataGridViewHelper dgvHelp = new DataGridViewHelper();
         public Dev(string customerID)
         {
             InitializeComponent();
@@ -36,40 +37,26 @@ namespace barroc_IT
         public void load_info_Add()
         {
             btn_edit_Infotab_Dev.Text = "Save";
+            dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE 1=2");
+            
         }
         private void load_edittable_Info()
         {
-            comName_txt.Text = dg_Infotab_Dev1.Rows[1].Cells["column2"].Value.ToString();
-            addr1_txt.Text = dg_Infotab_Dev1.Rows[2].Cells["column2"].Value.ToString();
-            zip1_txt.Text = dg_Infotab_Dev1.Rows[3].Cells["column2"].Value.ToString();
-            city1_txt.Text = dg_Infotab_Dev1.Rows[4].Cells["column2"].Value.ToString();
-            addr2_txt.Text = dg_Infotab_Dev1.Rows[5].Cells["column2"].Value.ToString();
-            zip2_txt.Text = dg_Infotab_Dev1.Rows[6].Cells["column2"].Value.ToString();
-            city2_txt.Text = dg_Infotab_Dev1.Rows[7].Cells["column2"].Value.ToString();
-            conPerson_txt.Text = dg_Infotab_Dev1.Rows[8].Cells["column2"].Value.ToString();
-            initials_txt.Text = dg_Infotab_Dev1.Rows[9].Cells["column2"].Value.ToString();
-            phoneNum1_txt.Text = dg_Infotab_Dev1.Rows[10].Cells["column2"].Value.ToString();
-            phoneNum2_txt.Text = dg_Infotab_Dev1.Rows[11].Cells["column2"].Value.ToString();
-            faxNum_txt.Text = dg_Infotab_Dev1.Rows[12].Cells["column2"].Value.ToString();
-            email_txt.Text = dg_Infotab_Dev1.Rows[13].Cells["column2"].Value.ToString();
-            creditor_txt.Text = dg_Infotab_Dev1.Rows[14].Cells["column2"].Value.ToString();
-            bankAcc_txt.Text = dg_Infotab_Dev1.Rows[15].Cells["column2"].Value.ToString();
-            creditBal_txt.Text = dg_Infotab_Dev1.Rows[16].Cells["column2"].Value.ToString();
-            numOfInvoices_txt.Text = dg_Infotab_Dev1.Rows[17].Cells["column2"].Value.ToString();
-            grossRev_txt.Text = dg_Infotab_Dev1.Rows[18].Cells["column2"].Value.ToString();
-            ledgerAcc_txt.Text = dg_Infotab_Dev1.Rows[19].Cells["column2"].Value.ToString();
-            taxCode_txt.Text = dg_Infotab_Dev1.Rows[20].Cells["column2"].Value.ToString();
+            //dev part
+            dgvHelp.LoadInfo(info_tab, 20, dg_Infotab_Dev1);
+           
             if (dg_Infotab_Dev1.Rows[21].Cells["column2"].Value.ToString() == "True")
             {
                 potClient_yes_checkbox.Checked = true;
             }
             //dtp_Dev.Value = dg_Infotab_Dev1.Rows[21].Cells["column2"].Value;
+
+            //projects part
+
         }
 
         private void btn_edit_Infotab_Dev_Click(object sender, EventArgs e)
         {
-            DatabaseHandler db = new DatabaseHandler();
-           
             if (btn_edit_Infotab_Dev.Text == "Edit")
             {
                 load_edittable_Info();
@@ -97,28 +84,26 @@ namespace barroc_IT
                 }
                 if (!exception)
                 {
-                    dic.Add("company_Name", comName_txt.Text);
-                    dic.Add("address1", addr1_txt.Text);
-                    dic.Add("zipcode1", zip1_txt.Text);
-                    dic.Add("city1", city1_txt.Text);
-                    dic.Add("address2", addr2_txt.Text);
-                    dic.Add("zipcode2", zip2_txt.Text);
-                    dic.Add("city2", city2_txt.Text);
-                    dic.Add("contact_Person", conPerson_txt.Text);
-                    dic.Add("intials", initials_txt.Text);
-                    dic.Add("phone_Num1", phoneNum1_txt.Text);
-                    dic.Add("phone_Num2", phoneNum2_txt.Text);
-                    dic.Add("fax_Num", faxNum_txt.Text);
-                    dic.Add("email", email_txt.Text);
-                    dic.Add("creditor", creditor_txt.Text);
-                    dic.Add("bank_acc_Num", bankAcc_txt.Text);
-                    dic.Add("credit_Balance", creditBal_txt.Text);
-                    dic.Add("num_of_Invoices", numOfInvoices_txt.Text);
-                    dic.Add("gross_revenue", grossRev_txt.Text);
-                    dic.Add("ledger_acc_Num", ledgerAcc_txt.Text);
-                    dic.Add("tax_Code", taxCode_txt.Text);
-                    dic.Add("potential_Client", "" + potClient_yes_checkbox.Checked + "");
-                    dic.Add("last_contact_Date", "" + dtp_Dev.Value.ToString("yyyy-MM-dd") + "");
+                    int b = 1;
+                    for (int i = 0; i < 100; i++)
+                    {
+                        foreach (Control c in info_tab.Controls)
+                        {
+                            if (c is TextBox)
+                            {
+                                TextBox textbox = c as TextBox;
+                                dic.Add(dg_Infotab_Dev1.Rows[b].Cells["column1"].Value.ToString(), c.Name = "infoTabText"+b.ToString());
+                                b++;
+                                if (c.Name == "infoTabText20")
+                                {
+                                    i = 100;
+                                    dic.Add("potential_Client", "" + potClient_yes_checkbox.Checked + "");
+                                    dic.Add("last_contact_Date", "" + dtp_Dev.Value.ToString("yyyy-MM-dd") + "");
+                                    break;
+                                }
+                            }
+                        }
+                    }
                     if (dg_Infotab_Dev1.Columns.Count == 2)
                     {
                         db.updateCmd("tbl_customers", dic);
@@ -129,9 +114,39 @@ namespace barroc_IT
                     }
                     btn_edit_Infotab_Dev.Text = "Edit";
                     dg_Infotab_Dev1.Enabled = true;
-                    dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers");
+                    dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE company_Name = "+infoTabText1.Text);
                 }
             }
+        }
+
+        private void btn_Logout_InfoTab_Dev_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            this.Dispose();
+        }
+
+        private void backBtn_infoTab_Dev_Click(object sender, EventArgs e)
+        {
+            client_list_Dev cList = new client_list_Dev();
+            cList.Show();
+            this.Hide();
+            this.Dispose();
+        }
+
+        private void btn_Logout_AppointmentTab_Dev_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            this.Dispose();
+        }
+
+        private void btn_Add_Project_Dev_Click(object sender, EventArgs e)
+        {
+            dg_ProjectsTab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_projects WHERE 1=2");
+            btn_Edit_ProjectTab_Dev.Text = "Save";
         }
     }
 }

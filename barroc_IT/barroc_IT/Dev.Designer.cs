@@ -30,56 +30,56 @@
         {
             this.tab_Control_Dev = new System.Windows.Forms.TabControl();
             this.info_tab = new System.Windows.Forms.TabPage();
+            this.backBtn_infoTab_Dev = new System.Windows.Forms.Button();
             this.dtp_Dev = new System.Windows.Forms.DateTimePicker();
             this.potClient_yes_checkbox = new System.Windows.Forms.CheckBox();
             this.lastContactDate_lbl = new System.Windows.Forms.Label();
             this.potClient_lbl = new System.Windows.Forms.Label();
-            this.taxCode_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText20 = new System.Windows.Forms.TextBox();
             this.taxCode_lbl = new System.Windows.Forms.Label();
-            this.ledgerAcc_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText19 = new System.Windows.Forms.TextBox();
             this.ledgerAcc_lbl = new System.Windows.Forms.Label();
-            this.grossRev_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText18 = new System.Windows.Forms.TextBox();
             this.grossRev_lbl = new System.Windows.Forms.Label();
-            this.numOfInvoices_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText17 = new System.Windows.Forms.TextBox();
             this.numOfInvoices_lbl = new System.Windows.Forms.Label();
-            this.creditBal_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText16 = new System.Windows.Forms.TextBox();
             this.creditBal_lbl = new System.Windows.Forms.Label();
-            this.bankAcc_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText15 = new System.Windows.Forms.TextBox();
             this.bankAcc_lbl = new System.Windows.Forms.Label();
-            this.creditor_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText14 = new System.Windows.Forms.TextBox();
             this.creditor_lbl = new System.Windows.Forms.Label();
-            this.email_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText13 = new System.Windows.Forms.TextBox();
             this.email_lbl = new System.Windows.Forms.Label();
-            this.faxNum_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText12 = new System.Windows.Forms.TextBox();
             this.faxNum_lbl = new System.Windows.Forms.Label();
-            this.phoneNum2_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText11 = new System.Windows.Forms.TextBox();
             this.phoneNum2_lbl = new System.Windows.Forms.Label();
-            this.phoneNum1_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText10 = new System.Windows.Forms.TextBox();
             this.phoneNum1_lbl = new System.Windows.Forms.Label();
-            this.initials_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText9 = new System.Windows.Forms.TextBox();
             this.initials_lbl = new System.Windows.Forms.Label();
-            this.conPerson_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText8 = new System.Windows.Forms.TextBox();
             this.conPerson_lbl = new System.Windows.Forms.Label();
-            this.city2_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText7 = new System.Windows.Forms.TextBox();
             this.city2_lbl = new System.Windows.Forms.Label();
-            this.zip2_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText6 = new System.Windows.Forms.TextBox();
             this.zip2_lbl = new System.Windows.Forms.Label();
-            this.addr2_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText5 = new System.Windows.Forms.TextBox();
             this.addr2_lbl = new System.Windows.Forms.Label();
-            this.city1_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText4 = new System.Windows.Forms.TextBox();
             this.city1_lbl = new System.Windows.Forms.Label();
-            this.zip1_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText3 = new System.Windows.Forms.TextBox();
             this.zip1_lbl = new System.Windows.Forms.Label();
-            this.addr1_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText2 = new System.Windows.Forms.TextBox();
             this.addr1_lbl = new System.Windows.Forms.Label();
-            this.comName_txt = new System.Windows.Forms.TextBox();
+            this.infoTabText1 = new System.Windows.Forms.TextBox();
             this.comName_lbl = new System.Windows.Forms.Label();
             this.btn_Logout_InfoTab_Dev = new System.Windows.Forms.Button();
             this.btn_edit_Infotab_Dev = new System.Windows.Forms.Button();
             this.dg_Infotab_Dev1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_Logout_AppointmentTab_Dev = new System.Windows.Forms.Button();
-            this.dg_ProjectsTab_Dev2 = new System.Windows.Forms.DataGridView();
             this.btn_Edit_ProjectTab_Dev = new System.Windows.Forms.Button();
             this.dg_ProjectsTab_Dev1 = new System.Windows.Forms.DataGridView();
             this.btn_Add_Project_Dev = new System.Windows.Forms.Button();
@@ -95,11 +95,24 @@
             this.dg_InvoicesTab_Dev1 = new System.Windows.Forms.DataGridView();
             this.btn_Edit_InvoiceTab_Dev = new System.Windows.Forms.Button();
             this.btn_Add_Invoice_Dev = new System.Windows.Forms.Button();
+            this.appName_lbl_Dev = new System.Windows.Forms.Label();
+            this.MainContract_lbl_Dev = new System.Windows.Forms.Label();
+            this.creditWorthy_lbl_Dev = new System.Windows.Forms.Label();
+            this.bkr_Check_lbl_Dev = new System.Windows.Forms.Label();
+            this.price_lbl_Dev = new System.Windows.Forms.Label();
+            this.limit_lbl_Dev = new System.Windows.Forms.Label();
+            this.amount_of_invoices_lbl_Dev = new System.Windows.Forms.Label();
+            this.projectsTab_txt1 = new System.Windows.Forms.TextBox();
+            this.projectsTab_Check1_Dev = new System.Windows.Forms.CheckBox();
+            this.projectsTab_Check2_Dev = new System.Windows.Forms.CheckBox();
+            this.projectsTab_Check3_Dev = new System.Windows.Forms.CheckBox();
+            this.projectsTab_txt2 = new System.Windows.Forms.TextBox();
+            this.projectsTab_txt3 = new System.Windows.Forms.TextBox();
+            this.projectsTab_txt4 = new System.Windows.Forms.TextBox();
             this.tab_Control_Dev.SuspendLayout();
             this.info_tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Infotab_Dev1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_ProjectsTab_Dev2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_ProjectsTab_Dev1)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_AppointmentsTab_Dev2)).BeginInit();
@@ -123,49 +136,50 @@
             // 
             // info_tab
             // 
+            this.info_tab.Controls.Add(this.backBtn_infoTab_Dev);
             this.info_tab.Controls.Add(this.dtp_Dev);
             this.info_tab.Controls.Add(this.potClient_yes_checkbox);
             this.info_tab.Controls.Add(this.lastContactDate_lbl);
             this.info_tab.Controls.Add(this.potClient_lbl);
-            this.info_tab.Controls.Add(this.taxCode_txt);
+            this.info_tab.Controls.Add(this.infoTabText20);
             this.info_tab.Controls.Add(this.taxCode_lbl);
-            this.info_tab.Controls.Add(this.ledgerAcc_txt);
+            this.info_tab.Controls.Add(this.infoTabText19);
             this.info_tab.Controls.Add(this.ledgerAcc_lbl);
-            this.info_tab.Controls.Add(this.grossRev_txt);
+            this.info_tab.Controls.Add(this.infoTabText18);
             this.info_tab.Controls.Add(this.grossRev_lbl);
-            this.info_tab.Controls.Add(this.numOfInvoices_txt);
+            this.info_tab.Controls.Add(this.infoTabText17);
             this.info_tab.Controls.Add(this.numOfInvoices_lbl);
-            this.info_tab.Controls.Add(this.creditBal_txt);
+            this.info_tab.Controls.Add(this.infoTabText16);
             this.info_tab.Controls.Add(this.creditBal_lbl);
-            this.info_tab.Controls.Add(this.bankAcc_txt);
+            this.info_tab.Controls.Add(this.infoTabText15);
             this.info_tab.Controls.Add(this.bankAcc_lbl);
-            this.info_tab.Controls.Add(this.creditor_txt);
+            this.info_tab.Controls.Add(this.infoTabText14);
             this.info_tab.Controls.Add(this.creditor_lbl);
-            this.info_tab.Controls.Add(this.email_txt);
+            this.info_tab.Controls.Add(this.infoTabText13);
             this.info_tab.Controls.Add(this.email_lbl);
-            this.info_tab.Controls.Add(this.faxNum_txt);
+            this.info_tab.Controls.Add(this.infoTabText12);
             this.info_tab.Controls.Add(this.faxNum_lbl);
-            this.info_tab.Controls.Add(this.phoneNum2_txt);
+            this.info_tab.Controls.Add(this.infoTabText11);
             this.info_tab.Controls.Add(this.phoneNum2_lbl);
-            this.info_tab.Controls.Add(this.phoneNum1_txt);
+            this.info_tab.Controls.Add(this.infoTabText10);
             this.info_tab.Controls.Add(this.phoneNum1_lbl);
-            this.info_tab.Controls.Add(this.initials_txt);
+            this.info_tab.Controls.Add(this.infoTabText9);
             this.info_tab.Controls.Add(this.initials_lbl);
-            this.info_tab.Controls.Add(this.conPerson_txt);
+            this.info_tab.Controls.Add(this.infoTabText8);
             this.info_tab.Controls.Add(this.conPerson_lbl);
-            this.info_tab.Controls.Add(this.city2_txt);
+            this.info_tab.Controls.Add(this.infoTabText7);
             this.info_tab.Controls.Add(this.city2_lbl);
-            this.info_tab.Controls.Add(this.zip2_txt);
+            this.info_tab.Controls.Add(this.infoTabText6);
             this.info_tab.Controls.Add(this.zip2_lbl);
-            this.info_tab.Controls.Add(this.addr2_txt);
+            this.info_tab.Controls.Add(this.infoTabText5);
             this.info_tab.Controls.Add(this.addr2_lbl);
-            this.info_tab.Controls.Add(this.city1_txt);
+            this.info_tab.Controls.Add(this.infoTabText4);
             this.info_tab.Controls.Add(this.city1_lbl);
-            this.info_tab.Controls.Add(this.zip1_txt);
+            this.info_tab.Controls.Add(this.infoTabText3);
             this.info_tab.Controls.Add(this.zip1_lbl);
-            this.info_tab.Controls.Add(this.addr1_txt);
+            this.info_tab.Controls.Add(this.infoTabText2);
             this.info_tab.Controls.Add(this.addr1_lbl);
-            this.info_tab.Controls.Add(this.comName_txt);
+            this.info_tab.Controls.Add(this.infoTabText1);
             this.info_tab.Controls.Add(this.comName_lbl);
             this.info_tab.Controls.Add(this.btn_Logout_InfoTab_Dev);
             this.info_tab.Controls.Add(this.btn_edit_Infotab_Dev);
@@ -177,6 +191,16 @@
             this.info_tab.TabIndex = 0;
             this.info_tab.Text = "Information";
             this.info_tab.UseVisualStyleBackColor = true;
+            // 
+            // backBtn_infoTab_Dev
+            // 
+            this.backBtn_infoTab_Dev.Location = new System.Drawing.Point(7, 5);
+            this.backBtn_infoTab_Dev.Name = "backBtn_infoTab_Dev";
+            this.backBtn_infoTab_Dev.Size = new System.Drawing.Size(75, 23);
+            this.backBtn_infoTab_Dev.TabIndex = 56;
+            this.backBtn_infoTab_Dev.Text = "Back";
+            this.backBtn_infoTab_Dev.UseVisualStyleBackColor = true;
+            this.backBtn_infoTab_Dev.Click += new System.EventHandler(this.backBtn_infoTab_Dev_Click);
             // 
             // dtp_Dev
             // 
@@ -215,12 +239,12 @@
             this.potClient_lbl.TabIndex = 50;
             this.potClient_lbl.Text = "Potential Client";
             // 
-            // taxCode_txt
+            // infoTabText20
             // 
-            this.taxCode_txt.Location = new System.Drawing.Point(843, 312);
-            this.taxCode_txt.Name = "taxCode_txt";
-            this.taxCode_txt.Size = new System.Drawing.Size(100, 22);
-            this.taxCode_txt.TabIndex = 49;
+            this.infoTabText20.Location = new System.Drawing.Point(843, 312);
+            this.infoTabText20.Name = "infoTabText20";
+            this.infoTabText20.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText20.TabIndex = 49;
             // 
             // taxCode_lbl
             // 
@@ -231,12 +255,12 @@
             this.taxCode_lbl.TabIndex = 48;
             this.taxCode_lbl.Text = "Tax Code";
             // 
-            // ledgerAcc_txt
+            // infoTabText19
             // 
-            this.ledgerAcc_txt.Location = new System.Drawing.Point(843, 271);
-            this.ledgerAcc_txt.Name = "ledgerAcc_txt";
-            this.ledgerAcc_txt.Size = new System.Drawing.Size(100, 22);
-            this.ledgerAcc_txt.TabIndex = 47;
+            this.infoTabText19.Location = new System.Drawing.Point(843, 271);
+            this.infoTabText19.Name = "infoTabText19";
+            this.infoTabText19.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText19.TabIndex = 47;
             // 
             // ledgerAcc_lbl
             // 
@@ -247,12 +271,12 @@
             this.ledgerAcc_lbl.TabIndex = 46;
             this.ledgerAcc_lbl.Text = "Ledger Account";
             // 
-            // grossRev_txt
+            // infoTabText18
             // 
-            this.grossRev_txt.Location = new System.Drawing.Point(843, 234);
-            this.grossRev_txt.Name = "grossRev_txt";
-            this.grossRev_txt.Size = new System.Drawing.Size(100, 22);
-            this.grossRev_txt.TabIndex = 45;
+            this.infoTabText18.Location = new System.Drawing.Point(843, 234);
+            this.infoTabText18.Name = "infoTabText18";
+            this.infoTabText18.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText18.TabIndex = 45;
             // 
             // grossRev_lbl
             // 
@@ -263,12 +287,12 @@
             this.grossRev_lbl.TabIndex = 44;
             this.grossRev_lbl.Text = "Gross Revenue";
             // 
-            // numOfInvoices_txt
+            // infoTabText17
             // 
-            this.numOfInvoices_txt.Location = new System.Drawing.Point(843, 193);
-            this.numOfInvoices_txt.Name = "numOfInvoices_txt";
-            this.numOfInvoices_txt.Size = new System.Drawing.Size(100, 22);
-            this.numOfInvoices_txt.TabIndex = 43;
+            this.infoTabText17.Location = new System.Drawing.Point(843, 193);
+            this.infoTabText17.Name = "infoTabText17";
+            this.infoTabText17.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText17.TabIndex = 43;
             // 
             // numOfInvoices_lbl
             // 
@@ -279,12 +303,12 @@
             this.numOfInvoices_lbl.TabIndex = 42;
             this.numOfInvoices_lbl.Text = "Number of invoices";
             // 
-            // creditBal_txt
+            // infoTabText16
             // 
-            this.creditBal_txt.Location = new System.Drawing.Point(843, 154);
-            this.creditBal_txt.Name = "creditBal_txt";
-            this.creditBal_txt.Size = new System.Drawing.Size(100, 22);
-            this.creditBal_txt.TabIndex = 41;
+            this.infoTabText16.Location = new System.Drawing.Point(843, 154);
+            this.infoTabText16.Name = "infoTabText16";
+            this.infoTabText16.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText16.TabIndex = 41;
             // 
             // creditBal_lbl
             // 
@@ -295,12 +319,12 @@
             this.creditBal_lbl.TabIndex = 40;
             this.creditBal_lbl.Text = "Credit Balance";
             // 
-            // bankAcc_txt
+            // infoTabText15
             // 
-            this.bankAcc_txt.Location = new System.Drawing.Point(843, 113);
-            this.bankAcc_txt.Name = "bankAcc_txt";
-            this.bankAcc_txt.Size = new System.Drawing.Size(100, 22);
-            this.bankAcc_txt.TabIndex = 39;
+            this.infoTabText15.Location = new System.Drawing.Point(843, 113);
+            this.infoTabText15.Name = "infoTabText15";
+            this.infoTabText15.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText15.TabIndex = 39;
             // 
             // bankAcc_lbl
             // 
@@ -311,12 +335,12 @@
             this.bankAcc_lbl.TabIndex = 38;
             this.bankAcc_lbl.Text = "Bank Account";
             // 
-            // creditor_txt
+            // infoTabText14
             // 
-            this.creditor_txt.Location = new System.Drawing.Point(843, 74);
-            this.creditor_txt.Name = "creditor_txt";
-            this.creditor_txt.Size = new System.Drawing.Size(100, 22);
-            this.creditor_txt.TabIndex = 37;
+            this.infoTabText14.Location = new System.Drawing.Point(843, 74);
+            this.infoTabText14.Name = "infoTabText14";
+            this.infoTabText14.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText14.TabIndex = 37;
             // 
             // creditor_lbl
             // 
@@ -327,12 +351,12 @@
             this.creditor_lbl.TabIndex = 36;
             this.creditor_lbl.Text = "Creditor";
             // 
-            // email_txt
+            // infoTabText13
             // 
-            this.email_txt.Location = new System.Drawing.Point(843, 33);
-            this.email_txt.Name = "email_txt";
-            this.email_txt.Size = new System.Drawing.Size(100, 22);
-            this.email_txt.TabIndex = 35;
+            this.infoTabText13.Location = new System.Drawing.Point(843, 33);
+            this.infoTabText13.Name = "infoTabText13";
+            this.infoTabText13.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText13.TabIndex = 35;
             // 
             // email_lbl
             // 
@@ -343,12 +367,12 @@
             this.email_lbl.TabIndex = 34;
             this.email_lbl.Text = "Email";
             // 
-            // faxNum_txt
+            // infoTabText12
             // 
-            this.faxNum_txt.Location = new System.Drawing.Point(608, 471);
-            this.faxNum_txt.Name = "faxNum_txt";
-            this.faxNum_txt.Size = new System.Drawing.Size(100, 22);
-            this.faxNum_txt.TabIndex = 33;
+            this.infoTabText12.Location = new System.Drawing.Point(608, 471);
+            this.infoTabText12.Name = "infoTabText12";
+            this.infoTabText12.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText12.TabIndex = 33;
             // 
             // faxNum_lbl
             // 
@@ -359,12 +383,12 @@
             this.faxNum_lbl.TabIndex = 32;
             this.faxNum_lbl.Text = "Fax Number";
             // 
-            // phoneNum2_txt
+            // infoTabText11
             // 
-            this.phoneNum2_txt.Location = new System.Drawing.Point(608, 430);
-            this.phoneNum2_txt.Name = "phoneNum2_txt";
-            this.phoneNum2_txt.Size = new System.Drawing.Size(100, 22);
-            this.phoneNum2_txt.TabIndex = 31;
+            this.infoTabText11.Location = new System.Drawing.Point(608, 430);
+            this.infoTabText11.Name = "infoTabText11";
+            this.infoTabText11.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText11.TabIndex = 31;
             // 
             // phoneNum2_lbl
             // 
@@ -375,12 +399,12 @@
             this.phoneNum2_lbl.TabIndex = 30;
             this.phoneNum2_lbl.Text = "Phone Number 2";
             // 
-            // phoneNum1_txt
+            // infoTabText10
             // 
-            this.phoneNum1_txt.Location = new System.Drawing.Point(608, 392);
-            this.phoneNum1_txt.Name = "phoneNum1_txt";
-            this.phoneNum1_txt.Size = new System.Drawing.Size(100, 22);
-            this.phoneNum1_txt.TabIndex = 29;
+            this.infoTabText10.Location = new System.Drawing.Point(608, 392);
+            this.infoTabText10.Name = "infoTabText10";
+            this.infoTabText10.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText10.TabIndex = 29;
             // 
             // phoneNum1_lbl
             // 
@@ -391,12 +415,12 @@
             this.phoneNum1_lbl.TabIndex = 28;
             this.phoneNum1_lbl.Text = "Phone Number 1";
             // 
-            // initials_txt
+            // infoTabText9
             // 
-            this.initials_txt.Location = new System.Drawing.Point(608, 351);
-            this.initials_txt.Name = "initials_txt";
-            this.initials_txt.Size = new System.Drawing.Size(100, 22);
-            this.initials_txt.TabIndex = 27;
+            this.infoTabText9.Location = new System.Drawing.Point(608, 351);
+            this.infoTabText9.Name = "infoTabText9";
+            this.infoTabText9.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText9.TabIndex = 27;
             // 
             // initials_lbl
             // 
@@ -407,12 +431,12 @@
             this.initials_lbl.TabIndex = 26;
             this.initials_lbl.Text = "Initials";
             // 
-            // conPerson_txt
+            // infoTabText8
             // 
-            this.conPerson_txt.Location = new System.Drawing.Point(608, 312);
-            this.conPerson_txt.Name = "conPerson_txt";
-            this.conPerson_txt.Size = new System.Drawing.Size(100, 22);
-            this.conPerson_txt.TabIndex = 25;
+            this.infoTabText8.Location = new System.Drawing.Point(608, 312);
+            this.infoTabText8.Name = "infoTabText8";
+            this.infoTabText8.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText8.TabIndex = 25;
             // 
             // conPerson_lbl
             // 
@@ -423,12 +447,12 @@
             this.conPerson_lbl.TabIndex = 24;
             this.conPerson_lbl.Text = "Contact Person";
             // 
-            // city2_txt
+            // infoTabText7
             // 
-            this.city2_txt.Location = new System.Drawing.Point(608, 271);
-            this.city2_txt.Name = "city2_txt";
-            this.city2_txt.Size = new System.Drawing.Size(100, 22);
-            this.city2_txt.TabIndex = 23;
+            this.infoTabText7.Location = new System.Drawing.Point(608, 271);
+            this.infoTabText7.Name = "infoTabText7";
+            this.infoTabText7.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText7.TabIndex = 23;
             // 
             // city2_lbl
             // 
@@ -439,12 +463,12 @@
             this.city2_lbl.TabIndex = 22;
             this.city2_lbl.Text = "City 2";
             // 
-            // zip2_txt
+            // infoTabText6
             // 
-            this.zip2_txt.Location = new System.Drawing.Point(608, 234);
-            this.zip2_txt.Name = "zip2_txt";
-            this.zip2_txt.Size = new System.Drawing.Size(100, 22);
-            this.zip2_txt.TabIndex = 21;
+            this.infoTabText6.Location = new System.Drawing.Point(608, 234);
+            this.infoTabText6.Name = "infoTabText6";
+            this.infoTabText6.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText6.TabIndex = 21;
             // 
             // zip2_lbl
             // 
@@ -455,12 +479,12 @@
             this.zip2_lbl.TabIndex = 20;
             this.zip2_lbl.Text = "Zipcode 2";
             // 
-            // addr2_txt
+            // infoTabText5
             // 
-            this.addr2_txt.Location = new System.Drawing.Point(608, 193);
-            this.addr2_txt.Name = "addr2_txt";
-            this.addr2_txt.Size = new System.Drawing.Size(100, 22);
-            this.addr2_txt.TabIndex = 19;
+            this.infoTabText5.Location = new System.Drawing.Point(608, 193);
+            this.infoTabText5.Name = "infoTabText5";
+            this.infoTabText5.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText5.TabIndex = 19;
             // 
             // addr2_lbl
             // 
@@ -471,12 +495,12 @@
             this.addr2_lbl.TabIndex = 18;
             this.addr2_lbl.Text = "Address 2";
             // 
-            // city1_txt
+            // infoTabText4
             // 
-            this.city1_txt.Location = new System.Drawing.Point(608, 151);
-            this.city1_txt.Name = "city1_txt";
-            this.city1_txt.Size = new System.Drawing.Size(100, 22);
-            this.city1_txt.TabIndex = 17;
+            this.infoTabText4.Location = new System.Drawing.Point(608, 151);
+            this.infoTabText4.Name = "infoTabText4";
+            this.infoTabText4.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText4.TabIndex = 17;
             // 
             // city1_lbl
             // 
@@ -487,12 +511,12 @@
             this.city1_lbl.TabIndex = 16;
             this.city1_lbl.Text = "City 1";
             // 
-            // zip1_txt
+            // infoTabText3
             // 
-            this.zip1_txt.Location = new System.Drawing.Point(608, 110);
-            this.zip1_txt.Name = "zip1_txt";
-            this.zip1_txt.Size = new System.Drawing.Size(100, 22);
-            this.zip1_txt.TabIndex = 15;
+            this.infoTabText3.Location = new System.Drawing.Point(608, 110);
+            this.infoTabText3.Name = "infoTabText3";
+            this.infoTabText3.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText3.TabIndex = 15;
             // 
             // zip1_lbl
             // 
@@ -503,12 +527,12 @@
             this.zip1_lbl.TabIndex = 14;
             this.zip1_lbl.Text = "Zipcode 1";
             // 
-            // addr1_txt
+            // infoTabText2
             // 
-            this.addr1_txt.Location = new System.Drawing.Point(608, 71);
-            this.addr1_txt.Name = "addr1_txt";
-            this.addr1_txt.Size = new System.Drawing.Size(100, 22);
-            this.addr1_txt.TabIndex = 13;
+            this.infoTabText2.Location = new System.Drawing.Point(608, 71);
+            this.infoTabText2.Name = "infoTabText2";
+            this.infoTabText2.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText2.TabIndex = 13;
             // 
             // addr1_lbl
             // 
@@ -519,12 +543,12 @@
             this.addr1_lbl.TabIndex = 12;
             this.addr1_lbl.Text = "Address 1";
             // 
-            // comName_txt
+            // infoTabText1
             // 
-            this.comName_txt.Location = new System.Drawing.Point(608, 30);
-            this.comName_txt.Name = "comName_txt";
-            this.comName_txt.Size = new System.Drawing.Size(100, 22);
-            this.comName_txt.TabIndex = 11;
+            this.infoTabText1.Location = new System.Drawing.Point(608, 30);
+            this.infoTabText1.Name = "infoTabText1";
+            this.infoTabText1.Size = new System.Drawing.Size(100, 22);
+            this.infoTabText1.TabIndex = 11;
             // 
             // comName_lbl
             // 
@@ -543,6 +567,7 @@
             this.btn_Logout_InfoTab_Dev.TabIndex = 9;
             this.btn_Logout_InfoTab_Dev.Text = "Log out";
             this.btn_Logout_InfoTab_Dev.UseVisualStyleBackColor = true;
+            this.btn_Logout_InfoTab_Dev.Click += new System.EventHandler(this.btn_Logout_InfoTab_Dev_Click);
             // 
             // btn_edit_Infotab_Dev
             // 
@@ -570,8 +595,21 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.projectsTab_txt4);
+            this.tabPage2.Controls.Add(this.projectsTab_txt3);
+            this.tabPage2.Controls.Add(this.projectsTab_txt2);
+            this.tabPage2.Controls.Add(this.projectsTab_Check3_Dev);
+            this.tabPage2.Controls.Add(this.projectsTab_Check2_Dev);
+            this.tabPage2.Controls.Add(this.projectsTab_Check1_Dev);
+            this.tabPage2.Controls.Add(this.projectsTab_txt1);
+            this.tabPage2.Controls.Add(this.amount_of_invoices_lbl_Dev);
+            this.tabPage2.Controls.Add(this.limit_lbl_Dev);
+            this.tabPage2.Controls.Add(this.price_lbl_Dev);
+            this.tabPage2.Controls.Add(this.bkr_Check_lbl_Dev);
+            this.tabPage2.Controls.Add(this.creditWorthy_lbl_Dev);
+            this.tabPage2.Controls.Add(this.MainContract_lbl_Dev);
+            this.tabPage2.Controls.Add(this.appName_lbl_Dev);
             this.tabPage2.Controls.Add(this.btn_Logout_AppointmentTab_Dev);
-            this.tabPage2.Controls.Add(this.dg_ProjectsTab_Dev2);
             this.tabPage2.Controls.Add(this.btn_Edit_ProjectTab_Dev);
             this.tabPage2.Controls.Add(this.dg_ProjectsTab_Dev1);
             this.tabPage2.Controls.Add(this.btn_Add_Project_Dev);
@@ -591,15 +629,7 @@
             this.btn_Logout_AppointmentTab_Dev.TabIndex = 8;
             this.btn_Logout_AppointmentTab_Dev.Text = "Log out";
             this.btn_Logout_AppointmentTab_Dev.UseVisualStyleBackColor = true;
-            // 
-            // dg_ProjectsTab_Dev2
-            // 
-            this.dg_ProjectsTab_Dev2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_ProjectsTab_Dev2.Location = new System.Drawing.Point(480, 37);
-            this.dg_ProjectsTab_Dev2.Name = "dg_ProjectsTab_Dev2";
-            this.dg_ProjectsTab_Dev2.RowTemplate.Height = 24;
-            this.dg_ProjectsTab_Dev2.Size = new System.Drawing.Size(486, 562);
-            this.dg_ProjectsTab_Dev2.TabIndex = 7;
+            this.btn_Logout_AppointmentTab_Dev.Click += new System.EventHandler(this.btn_Logout_AppointmentTab_Dev_Click);
             // 
             // btn_Edit_ProjectTab_Dev
             // 
@@ -629,6 +659,7 @@
             this.btn_Add_Project_Dev.TabIndex = 4;
             this.btn_Add_Project_Dev.Text = "Add project";
             this.btn_Add_Project_Dev.UseVisualStyleBackColor = true;
+            this.btn_Add_Project_Dev.Click += new System.EventHandler(this.btn_Add_Project_Dev_Click);
             // 
             // tabPage1
             // 
@@ -750,6 +781,127 @@
             this.btn_Add_Invoice_Dev.Text = "Add Invoice";
             this.btn_Add_Invoice_Dev.UseVisualStyleBackColor = true;
             // 
+            // appName_lbl_Dev
+            // 
+            this.appName_lbl_Dev.AutoSize = true;
+            this.appName_lbl_Dev.Location = new System.Drawing.Point(500, 40);
+            this.appName_lbl_Dev.Name = "appName_lbl_Dev";
+            this.appName_lbl_Dev.Size = new System.Drawing.Size(74, 17);
+            this.appName_lbl_Dev.TabIndex = 9;
+            this.appName_lbl_Dev.Text = "App Name";
+            // 
+            // MainContract_lbl_Dev
+            // 
+            this.MainContract_lbl_Dev.AutoSize = true;
+            this.MainContract_lbl_Dev.Location = new System.Drawing.Point(500, 79);
+            this.MainContract_lbl_Dev.Name = "MainContract_lbl_Dev";
+            this.MainContract_lbl_Dev.Size = new System.Drawing.Size(146, 17);
+            this.MainContract_lbl_Dev.TabIndex = 10;
+            this.MainContract_lbl_Dev.Text = "Maintenance Contract";
+            // 
+            // creditWorthy_lbl_Dev
+            // 
+            this.creditWorthy_lbl_Dev.AutoSize = true;
+            this.creditWorthy_lbl_Dev.Location = new System.Drawing.Point(500, 119);
+            this.creditWorthy_lbl_Dev.Name = "creditWorthy_lbl_Dev";
+            this.creditWorthy_lbl_Dev.Size = new System.Drawing.Size(94, 17);
+            this.creditWorthy_lbl_Dev.TabIndex = 11;
+            this.creditWorthy_lbl_Dev.Text = "Credit Worthy";
+            // 
+            // bkr_Check_lbl_Dev
+            // 
+            this.bkr_Check_lbl_Dev.AutoSize = true;
+            this.bkr_Check_lbl_Dev.Location = new System.Drawing.Point(500, 160);
+            this.bkr_Check_lbl_Dev.Name = "bkr_Check_lbl_Dev";
+            this.bkr_Check_lbl_Dev.Size = new System.Drawing.Size(77, 17);
+            this.bkr_Check_lbl_Dev.TabIndex = 12;
+            this.bkr_Check_lbl_Dev.Text = "BKR check";
+            // 
+            // price_lbl_Dev
+            // 
+            this.price_lbl_Dev.AutoSize = true;
+            this.price_lbl_Dev.Location = new System.Drawing.Point(500, 200);
+            this.price_lbl_Dev.Name = "price_lbl_Dev";
+            this.price_lbl_Dev.Size = new System.Drawing.Size(40, 17);
+            this.price_lbl_Dev.TabIndex = 13;
+            this.price_lbl_Dev.Text = "Price";
+            // 
+            // limit_lbl_Dev
+            // 
+            this.limit_lbl_Dev.AutoSize = true;
+            this.limit_lbl_Dev.Location = new System.Drawing.Point(500, 243);
+            this.limit_lbl_Dev.Name = "limit_lbl_Dev";
+            this.limit_lbl_Dev.Size = new System.Drawing.Size(37, 17);
+            this.limit_lbl_Dev.TabIndex = 14;
+            this.limit_lbl_Dev.Text = "Limit";
+            // 
+            // amount_of_invoices_lbl_Dev
+            // 
+            this.amount_of_invoices_lbl_Dev.AutoSize = true;
+            this.amount_of_invoices_lbl_Dev.Location = new System.Drawing.Point(500, 289);
+            this.amount_of_invoices_lbl_Dev.Name = "amount_of_invoices_lbl_Dev";
+            this.amount_of_invoices_lbl_Dev.Size = new System.Drawing.Size(127, 17);
+            this.amount_of_invoices_lbl_Dev.TabIndex = 15;
+            this.amount_of_invoices_lbl_Dev.Text = "Amount of Invoices";
+            // 
+            // projectsTab_txt1
+            // 
+            this.projectsTab_txt1.Location = new System.Drawing.Point(771, 37);
+            this.projectsTab_txt1.Name = "projectsTab_txt1";
+            this.projectsTab_txt1.Size = new System.Drawing.Size(100, 22);
+            this.projectsTab_txt1.TabIndex = 16;
+            // 
+            // projectsTab_Check1_Dev
+            // 
+            this.projectsTab_Check1_Dev.AutoSize = true;
+            this.projectsTab_Check1_Dev.Location = new System.Drawing.Point(771, 79);
+            this.projectsTab_Check1_Dev.Name = "projectsTab_Check1_Dev";
+            this.projectsTab_Check1_Dev.Size = new System.Drawing.Size(98, 21);
+            this.projectsTab_Check1_Dev.TabIndex = 17;
+            this.projectsTab_Check1_Dev.Text = "checkBox1";
+            this.projectsTab_Check1_Dev.UseVisualStyleBackColor = true;
+            // 
+            // projectsTab_Check2_Dev
+            // 
+            this.projectsTab_Check2_Dev.AutoSize = true;
+            this.projectsTab_Check2_Dev.Location = new System.Drawing.Point(771, 119);
+            this.projectsTab_Check2_Dev.Name = "projectsTab_Check2_Dev";
+            this.projectsTab_Check2_Dev.Size = new System.Drawing.Size(98, 21);
+            this.projectsTab_Check2_Dev.TabIndex = 18;
+            this.projectsTab_Check2_Dev.Text = "checkBox2";
+            this.projectsTab_Check2_Dev.UseVisualStyleBackColor = true;
+            // 
+            // projectsTab_Check3_Dev
+            // 
+            this.projectsTab_Check3_Dev.AutoSize = true;
+            this.projectsTab_Check3_Dev.Location = new System.Drawing.Point(771, 160);
+            this.projectsTab_Check3_Dev.Name = "projectsTab_Check3_Dev";
+            this.projectsTab_Check3_Dev.Size = new System.Drawing.Size(98, 21);
+            this.projectsTab_Check3_Dev.TabIndex = 19;
+            this.projectsTab_Check3_Dev.Text = "checkBox3";
+            this.projectsTab_Check3_Dev.UseVisualStyleBackColor = true;
+            // 
+            // projectsTab_txt2
+            // 
+            this.projectsTab_txt2.Location = new System.Drawing.Point(771, 200);
+            this.projectsTab_txt2.Name = "projectsTab_txt2";
+            this.projectsTab_txt2.Size = new System.Drawing.Size(100, 22);
+            this.projectsTab_txt2.TabIndex = 20;
+            // 
+            // projectsTab_txt3
+            // 
+            this.projectsTab_txt3.Location = new System.Drawing.Point(771, 243);
+            this.projectsTab_txt3.Name = "projectsTab_txt3";
+            this.projectsTab_txt3.Size = new System.Drawing.Size(100, 22);
+            this.projectsTab_txt3.TabIndex = 21;
+            // 
+            // projectsTab_txt4
+            // 
+            this.projectsTab_txt4.Location = new System.Drawing.Point(771, 289);
+            this.projectsTab_txt4.Name = "projectsTab_txt4";
+            this.projectsTab_txt4.Size = new System.Drawing.Size(100, 22);
+            this.projectsTab_txt4.TabIndex = 22;
+            // 
             // Dev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -764,7 +916,7 @@
             this.info_tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Infotab_Dev1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dg_ProjectsTab_Dev2)).EndInit();
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_ProjectsTab_Dev1)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_AppointmentsTab_Dev2)).EndInit();
@@ -784,7 +936,6 @@
         private System.Windows.Forms.Button btn_edit_Infotab_Dev;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btn_Logout_AppointmentTab_Dev;
-        private System.Windows.Forms.DataGridView dg_ProjectsTab_Dev2;
         private System.Windows.Forms.Button btn_Edit_ProjectTab_Dev;
         private System.Windows.Forms.DataGridView dg_ProjectsTab_Dev1;
         private System.Windows.Forms.Button btn_Add_Project_Dev;
@@ -804,46 +955,61 @@
         private System.Windows.Forms.CheckBox potClient_yes_checkbox;
         private System.Windows.Forms.Label lastContactDate_lbl;
         private System.Windows.Forms.Label potClient_lbl;
-        private System.Windows.Forms.TextBox taxCode_txt;
+        private System.Windows.Forms.TextBox infoTabText20;
         private System.Windows.Forms.Label taxCode_lbl;
-        private System.Windows.Forms.TextBox ledgerAcc_txt;
+        private System.Windows.Forms.TextBox infoTabText19;
         private System.Windows.Forms.Label ledgerAcc_lbl;
-        private System.Windows.Forms.TextBox grossRev_txt;
+        private System.Windows.Forms.TextBox infoTabText18;
         private System.Windows.Forms.Label grossRev_lbl;
-        private System.Windows.Forms.TextBox numOfInvoices_txt;
+        private System.Windows.Forms.TextBox infoTabText17;
         private System.Windows.Forms.Label numOfInvoices_lbl;
-        private System.Windows.Forms.TextBox creditBal_txt;
+        private System.Windows.Forms.TextBox infoTabText16;
         private System.Windows.Forms.Label creditBal_lbl;
-        private System.Windows.Forms.TextBox bankAcc_txt;
+        private System.Windows.Forms.TextBox infoTabText15;
         private System.Windows.Forms.Label bankAcc_lbl;
-        private System.Windows.Forms.TextBox creditor_txt;
+        private System.Windows.Forms.TextBox infoTabText14;
         private System.Windows.Forms.Label creditor_lbl;
-        private System.Windows.Forms.TextBox email_txt;
+        private System.Windows.Forms.TextBox infoTabText13;
         private System.Windows.Forms.Label email_lbl;
-        private System.Windows.Forms.TextBox faxNum_txt;
+        private System.Windows.Forms.TextBox infoTabText12;
         private System.Windows.Forms.Label faxNum_lbl;
-        private System.Windows.Forms.TextBox phoneNum2_txt;
+        private System.Windows.Forms.TextBox infoTabText11;
         private System.Windows.Forms.Label phoneNum2_lbl;
-        private System.Windows.Forms.TextBox phoneNum1_txt;
+        private System.Windows.Forms.TextBox infoTabText10;
         private System.Windows.Forms.Label phoneNum1_lbl;
-        private System.Windows.Forms.TextBox initials_txt;
+        private System.Windows.Forms.TextBox infoTabText9;
         private System.Windows.Forms.Label initials_lbl;
-        private System.Windows.Forms.TextBox conPerson_txt;
+        private System.Windows.Forms.TextBox infoTabText8;
         private System.Windows.Forms.Label conPerson_lbl;
-        private System.Windows.Forms.TextBox city2_txt;
+        private System.Windows.Forms.TextBox infoTabText7;
         private System.Windows.Forms.Label city2_lbl;
-        private System.Windows.Forms.TextBox zip2_txt;
+        private System.Windows.Forms.TextBox infoTabText6;
         private System.Windows.Forms.Label zip2_lbl;
-        private System.Windows.Forms.TextBox addr2_txt;
+        private System.Windows.Forms.TextBox infoTabText5;
         private System.Windows.Forms.Label addr2_lbl;
-        private System.Windows.Forms.TextBox city1_txt;
+        private System.Windows.Forms.TextBox infoTabText4;
         private System.Windows.Forms.Label city1_lbl;
-        private System.Windows.Forms.TextBox zip1_txt;
+        private System.Windows.Forms.TextBox infoTabText3;
         private System.Windows.Forms.Label zip1_lbl;
-        private System.Windows.Forms.TextBox addr1_txt;
+        private System.Windows.Forms.TextBox infoTabText2;
         private System.Windows.Forms.Label addr1_lbl;
-        private System.Windows.Forms.TextBox comName_txt;
+        private System.Windows.Forms.TextBox infoTabText1;
         private System.Windows.Forms.Label comName_lbl;
         private System.Windows.Forms.DateTimePicker dtp_Dev;
+        private System.Windows.Forms.Button backBtn_infoTab_Dev;
+        private System.Windows.Forms.TextBox projectsTab_txt4;
+        private System.Windows.Forms.TextBox projectsTab_txt3;
+        private System.Windows.Forms.TextBox projectsTab_txt2;
+        private System.Windows.Forms.CheckBox projectsTab_Check3_Dev;
+        private System.Windows.Forms.CheckBox projectsTab_Check2_Dev;
+        private System.Windows.Forms.CheckBox projectsTab_Check1_Dev;
+        private System.Windows.Forms.TextBox projectsTab_txt1;
+        private System.Windows.Forms.Label amount_of_invoices_lbl_Dev;
+        private System.Windows.Forms.Label limit_lbl_Dev;
+        private System.Windows.Forms.Label price_lbl_Dev;
+        private System.Windows.Forms.Label bkr_Check_lbl_Dev;
+        private System.Windows.Forms.Label creditWorthy_lbl_Dev;
+        private System.Windows.Forms.Label MainContract_lbl_Dev;
+        private System.Windows.Forms.Label appName_lbl_Dev;
     }
 }

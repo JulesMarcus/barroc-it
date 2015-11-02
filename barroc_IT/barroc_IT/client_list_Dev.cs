@@ -27,8 +27,9 @@ namespace barroc_IT
         {
             dev = new Dev();
             dev.load_info_Add();
-            this.Hide();
             dev.Show();
+            this.Hide();
+            this.Dispose();
         }
 
         private void dg_Client_list_Dev1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -36,8 +37,24 @@ namespace barroc_IT
             Dev dev = new Dev();
             string query = "SELECT * FROM tbl_customers WHERE company_Name = " + "'" +dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
             dev.load_info_from_Cell(query);
-            this.Hide();
             dev.Show();
+            this.Hide();
+        }
+
+        private void btn_Logout_Clientlist_Dev_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            this.Dispose();
+        }
+
+        private void backBtn_client_list_Dev_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+            this.Dispose();
         }
     }
 }
