@@ -45,7 +45,6 @@
             this.btn_Logout_Clientlist_Dev.TabIndex = 13;
             this.btn_Logout_Clientlist_Dev.Text = "Log out";
             this.btn_Logout_Clientlist_Dev.UseVisualStyleBackColor = true;
-            this.btn_Logout_Clientlist_Dev.Click += new System.EventHandler(this.btn_Logout_Clientlist_Dev_Click);
             // 
             // dg_Client_list_Dev1
             // 
@@ -60,7 +59,6 @@
             this.dg_Client_list_Dev1.RowTemplate.Height = 24;
             this.dg_Client_list_Dev1.Size = new System.Drawing.Size(478, 591);
             this.dg_Client_list_Dev1.TabIndex = 12;
-            this.dg_Client_list_Dev1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_Client_list_Dev1_CellClick);
             // 
             // btn_Add_Client_Clientlist_Dev
             // 
@@ -89,7 +87,6 @@
             this.backBtn_client_list_Dev.TabIndex = 15;
             this.backBtn_client_list_Dev.Text = "Back";
             this.backBtn_client_list_Dev.UseVisualStyleBackColor = true;
-            this.backBtn_client_list_Dev.Click += new System.EventHandler(this.backBtn_client_list_Dev_Click);
             // 
             // client_list_Dev
             // 
