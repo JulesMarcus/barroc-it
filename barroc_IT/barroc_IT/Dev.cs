@@ -29,10 +29,12 @@ namespace barroc_IT
         {
              
         }
-        public void load_info_from_Cell(string iQuery, string pQuery)
+        public void load_info_from_Cell(string iQuery, string pQuery, string inQuery, string aQuery)
         {
             dg_Infotab_Dev1.DataSource = db.GetDataView(iQuery);
             dg_ProjectsTab_Dev1.DataSource = db.GetDataView(pQuery);
+            dg_InvoicesTab_Dev1.DataSource = db.GetDataView(inQuery);
+            dg_AppointmentsTab_Dev1.DataSource = db.GetDataView(aQuery);
             btn_edit_Infotab_Dev.Text = "Edit";
         }
         public void load_info_Add()
@@ -107,10 +109,12 @@ namespace barroc_IT
                     if (dg_Infotab_Dev1.Columns.Count == 2)
                     {
                         db.updateCmd("tbl_customers", dic);
+                        db.insertConnectTables("tbl_projects", "company_Name", infoTabText1.Text);
                     }
                     else if(dg_Infotab_Dev1.Columns.Count == 1 || dg_Infotab_Dev1.Columns.Count == 0)
                     {
                         db.insertCmd("tbl_customers", dic);
+                        db.insertConnectTables("tbl_projects", "company_Name", infoTabText1.Text);
                     }
                     btn_edit_Infotab_Dev.Text = "Edit";
                     dg_Infotab_Dev1.Enabled = true;

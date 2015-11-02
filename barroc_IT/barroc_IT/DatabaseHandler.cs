@@ -54,6 +54,14 @@ namespace barroc_IT
             cmd.ExecuteNonQuery();
             _conn.Close();
         }
+        public void insertConnectTables(string tableName,string columnName, string value)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO " + tableName + "(" + columnName + ") VALUES (" + value + ") ", _conn);
+        }
+        public void updateConnectTables(string tableName, string columnName, string Value)
+        {
+            SqlCommand cmd = new SqlCommand("UPDATE " + tableName + " SET '" + columnName + "' = '" + Value + "'");
+        }
         public void updateCmd(string tableName, Dictionary<string, object> dic)
         {
             string keys = "";

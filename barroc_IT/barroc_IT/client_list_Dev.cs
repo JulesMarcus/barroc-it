@@ -36,8 +36,10 @@ namespace barroc_IT
         {
             Dev dev = new Dev();
             string iQuery = "SELECT * FROM tbl_customers WHERE company_Name = " + "'" +dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
-            string pQuery = "SELECT * FROM tbl_projects RIGHT JOIN tbl_customers ON tbl_customers.customer_ID=tbl_projects.project_ID;";
-            dev.load_info_from_Cell(iQuery, pQuery);
+            string pQuery = "SELECT * FROM tbl_projects WHERE company_Name = " + "'" + dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
+            string inQuery = "SELECT * FROM tbl_invoices WHERE company_Name =" + "'" + dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
+            string aQuery = "SELECT * FROM tbl_appointments WHERE company_Name =" + "'" + dg_Client_list_Dev1.CurrentCell.Value.ToString() + "' ;";
+            dev.load_info_from_Cell(iQuery, pQuery, inQuery, aQuery);
             dev.Show();
             this.Hide();
         }
