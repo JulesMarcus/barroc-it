@@ -25,10 +25,6 @@ namespace barroc_IT
             dg_Infotab_Dev1.Enabled = true;
             btn_edit_Infotab_Dev.Text = "Save";
         }
-        private void Dev_Load(object sender, EventArgs e)
-        {
-             
-        }
         public void load_info_from_Cell(string iQuery, string pQuery)
         {
             dg_Infotab_Dev1.DataSource = db.GetDataView(iQuery);

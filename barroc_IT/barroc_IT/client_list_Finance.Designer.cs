@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_Add_Client_Clientlist_Dev = new System.Windows.Forms.Button();
+            this.btn_Add_Client_Clientlist_Fin = new System.Windows.Forms.Button();
             this.dg_Client_list_Finance1 = new System.Windows.Forms.DataGridView();
             this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new barroc_IT.Database1DataSet();
@@ -41,25 +41,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Finance2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_Add_Client_Clientlist_Dev
+            // btn_Add_Client_Clientlist_Fin
             // 
-            this.btn_Add_Client_Clientlist_Dev.Location = new System.Drawing.Point(13, 13);
-            this.btn_Add_Client_Clientlist_Dev.Name = "btn_Add_Client_Clientlist_Dev";
-            this.btn_Add_Client_Clientlist_Dev.Size = new System.Drawing.Size(108, 24);
-            this.btn_Add_Client_Clientlist_Dev.TabIndex = 0;
-            this.btn_Add_Client_Clientlist_Dev.Text = "Add Client";
-            this.btn_Add_Client_Clientlist_Dev.UseVisualStyleBackColor = true;
-            this.btn_Add_Client_Clientlist_Dev.Click += new System.EventHandler(this.btn_Add_Client_Clientlist_Dev_Click);
+            this.btn_Add_Client_Clientlist_Fin.Location = new System.Drawing.Point(10, 11);
+            this.btn_Add_Client_Clientlist_Fin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Add_Client_Clientlist_Fin.Name = "btn_Add_Client_Clientlist_Fin";
+            this.btn_Add_Client_Clientlist_Fin.Size = new System.Drawing.Size(81, 20);
+            this.btn_Add_Client_Clientlist_Fin.TabIndex = 0;
+            this.btn_Add_Client_Clientlist_Fin.Text = "Add Client";
+            this.btn_Add_Client_Clientlist_Fin.UseVisualStyleBackColor = true;
+            this.btn_Add_Client_Clientlist_Fin.Click += new System.EventHandler(this.btn_Add_Client_Clientlist_Fin_Click);
             // 
             // dg_Client_list_Finance1
             // 
             this.dg_Client_list_Finance1.AutoGenerateColumns = false;
             this.dg_Client_list_Finance1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Client_list_Finance1.DataSource = this.database1DataSetBindingSource;
-            this.dg_Client_list_Finance1.Location = new System.Drawing.Point(13, 43);
+            this.dg_Client_list_Finance1.Location = new System.Drawing.Point(10, 35);
+            this.dg_Client_list_Finance1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_Client_list_Finance1.Name = "dg_Client_list_Finance1";
             this.dg_Client_list_Finance1.RowTemplate.Height = 24;
-            this.dg_Client_list_Finance1.Size = new System.Drawing.Size(478, 591);
+            this.dg_Client_list_Finance1.Size = new System.Drawing.Size(358, 480);
             this.dg_Client_list_Finance1.TabIndex = 1;
             // 
             // database1DataSetBindingSource
@@ -74,9 +76,10 @@
             // 
             // btn_Logout_Clientlist_Finance
             // 
-            this.btn_Logout_Clientlist_Finance.Location = new System.Drawing.Point(825, 640);
+            this.btn_Logout_Clientlist_Finance.Location = new System.Drawing.Point(619, 520);
+            this.btn_Logout_Clientlist_Finance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout_Clientlist_Finance.Name = "btn_Logout_Clientlist_Finance";
-            this.btn_Logout_Clientlist_Finance.Size = new System.Drawing.Size(160, 30);
+            this.btn_Logout_Clientlist_Finance.Size = new System.Drawing.Size(120, 24);
             this.btn_Logout_Clientlist_Finance.TabIndex = 10;
             this.btn_Logout_Clientlist_Finance.Text = "Log out";
             this.btn_Logout_Clientlist_Finance.UseVisualStyleBackColor = true;
@@ -86,21 +89,23 @@
             this.dg_Client_list_Finance2.AutoGenerateColumns = false;
             this.dg_Client_list_Finance2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Client_list_Finance2.DataSource = this.database1DataSetBindingSource;
-            this.dg_Client_list_Finance2.Location = new System.Drawing.Point(513, 43);
+            this.dg_Client_list_Finance2.Location = new System.Drawing.Point(385, 35);
+            this.dg_Client_list_Finance2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dg_Client_list_Finance2.Name = "dg_Client_list_Finance2";
             this.dg_Client_list_Finance2.RowTemplate.Height = 24;
-            this.dg_Client_list_Finance2.Size = new System.Drawing.Size(478, 591);
+            this.dg_Client_list_Finance2.Size = new System.Drawing.Size(358, 480);
             this.dg_Client_list_Finance2.TabIndex = 11;
             // 
             // client_list_Finance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 673);
+            this.ClientSize = new System.Drawing.Size(754, 547);
             this.Controls.Add(this.dg_Client_list_Finance2);
             this.Controls.Add(this.btn_Logout_Clientlist_Finance);
             this.Controls.Add(this.dg_Client_list_Finance1);
-            this.Controls.Add(this.btn_Add_Client_Clientlist_Dev);
+            this.Controls.Add(this.btn_Add_Client_Clientlist_Fin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "client_list_Finance";
             this.Text = "Client list Finance";
             ((System.ComponentModel.ISupportInitialize)(this.dg_Client_list_Finance1)).EndInit();
@@ -113,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Add_Client_Clientlist_Dev;
+        private System.Windows.Forms.Button btn_Add_Client_Clientlist_Fin;
         private System.Windows.Forms.DataGridView dg_Client_list_Finance1;
         private System.Windows.Forms.BindingSource database1DataSetBindingSource;
         private Database1DataSet database1DataSet;

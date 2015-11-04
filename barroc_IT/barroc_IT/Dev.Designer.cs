@@ -910,7 +910,6 @@
             this.Controls.Add(this.tab_Control_Dev);
             this.Name = "Dev";
             this.Text = "Dev";
-            this.Load += new System.EventHandler(this.Dev_Load);
             this.tab_Control_Dev.ResumeLayout(false);
             this.info_tab.ResumeLayout(false);
             this.info_tab.PerformLayout();
