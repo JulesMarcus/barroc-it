@@ -72,6 +72,7 @@
       <DependentUpon>client_list_Sales.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseHandler.cs" />
+    <Compile Include="DataDict.cs" />
     <Compile Include="DataGridViewHelper.cs" />
     <Compile Include="Dev.cs">
       <SubType>Form</SubType>
