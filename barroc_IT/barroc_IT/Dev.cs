@@ -27,14 +27,14 @@ namespace barroc_IT
         }
         public void load_info_from_Cell(string iQuery, string pQuery)
         {
-            dg_Infotab_Dev1.DataSource = db.GetDataView(iQuery);
-            dg_ProjectsTab_Dev1.DataSource = db.GetDataView(pQuery);
+            dg_Infotab_Dev1.DataSource = db.GetDataView(iQuery, null, true);
+            dg_ProjectsTab_Dev1.DataSource = db.GetDataView(pQuery, null, true);
             btn_edit_Infotab_Dev.Text = "Edit";
         }
         public void load_info_Add()
         {
             btn_edit_Infotab_Dev.Text = "Save";
-            dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE 1=2");
+            dg_Infotab_Dev1.DataSource = db.GetDataView(DataDict.TBL10, null, false, "1=2");
         }
         private void load_edittable_Info()
         {
@@ -110,7 +110,7 @@ namespace barroc_IT
                     }
                     btn_edit_Infotab_Dev.Text = "Edit";
                     dg_Infotab_Dev1.Enabled = true;
-                    dg_Infotab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE company_Name = "+infoTabText1.Text);
+                    dg_Infotab_Dev1.DataSource = db.GetDataView(DataDict.TBL10, null, false, DataDict.FLD12 + "=" + infoTabText1.Text);
                 }
             }
         }
@@ -141,7 +141,7 @@ namespace barroc_IT
 
         private void btn_Add_Project_Dev_Click(object sender, EventArgs e)
         {
-            dg_ProjectsTab_Dev1.DataSource = db.GetDataView("SELECT * FROM tbl_projects WHERE 1=2");
+            dg_ProjectsTab_Dev1.DataSource = db.GetDataView(DataDict.TBL20, null, false, "1=2");
             btn_Edit_ProjectTab_Dev.Text = "Save";
         }
     }

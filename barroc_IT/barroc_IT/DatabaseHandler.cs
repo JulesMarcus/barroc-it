@@ -106,10 +106,26 @@ namespace barroc_IT
         }
         
         //Method to get the flipped dataview for the dataviewgrid
-        public DataView GetDataView(string query)
-        { 
+        public DataView GetDataView(string tbl, string col = " * ", bool cust = false, string where = "")
+        {
+            string qry = "";
+            if (!cust)
+            {
+                qry += "SELECT " + col + " ";
+                qry += "FROM " + tbl + " ";
+                if (where != "")
+                {
+                    qry += "WHERE " + where;
+                }
+            }
+            else
+            {
+                qry = tbl;
+            }
+            
+
             DataSet x = new DataSet();
-            x.Tables.Add(QueryEx(query));
+            x.Tables.Add(QueryEx(qry));
             DataSet new_x = FlipDataSet(x);
             DataView y = new_x.Tables[0].DefaultView;
             return y;

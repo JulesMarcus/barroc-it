@@ -33,7 +33,7 @@ namespace barroc_IT
         public void load_info_Add()
         {
             btn_edit_Infotab_Finance.Text = "Save";
-            dg_InfoTab_Finance1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE 1=2");
+            dg_InfoTab_Finance1.DataSource = db.GetDataView(DataDict.TBL10, null, false, "1=2");
         }
         private void load_edittable_Info()
         {
@@ -96,15 +96,15 @@ namespace barroc_IT
                     }
                     if (dg_InfoTab_Finance1.Columns.Count == 2)
                     {
-                        db.updateCmd("tbl_customers", dic);
+                        db.updateCmd(DataDict.TBL10, dic);
                     }
                     else if (dg_InfoTab_Finance1.Columns.Count < 2)
                     {
-                        db.insertCmd("tbl_customers", dic);
+                        db.insertCmd(DataDict.TBL10, dic);
                     }
                     btn_edit_Infotab_Finance.Text = "Edit";
                     dg_InfoTab_Finance1.Enabled = true;
-                    dg_InfoTab_Finance1.DataSource = db.GetDataView("SELECT * FROM tbl_customers WHERE company_Name = " + infoTabText1.Text);
+                    dg_InfoTab_Finance1.DataSource = db.GetDataView(DataDict.TBL10, null, false, DataDict.FLD12 + "=" + infoTabText1.Text);
                 }
             }
         }
